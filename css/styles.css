@@ -351,7 +351,7 @@ header {
   font-size: 13px;
 }
 
-strong {
+.orange {
   color: #ebb94d;
 }
 
@@ -386,6 +386,57 @@ strong {
 .step-li > p:nth-child(2) {
   font-weight: bold;
   padding-top: 10px;
+}
+
+/* sixth-sectionクラス */
+
+.sixth-section {
+  height: 100px;
+  background: #016ea9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sixth-section > p {
+  text-align: center;
+  color: white;
+  font-size: 13px;
+}
+
+/* seventh-sectionクラス */
+
+.seventh-section > ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 60px;
+}
+
+.icon-two {
+  background: #ebb94d;
+  width: 120px;
+  border-radius: 50%;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon-two > img {
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  background: #ebb94d;
+}
+
+.icon-two > p {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon-two:not(:first-child) {
+  margin-left: 25px;
 }
 
 
