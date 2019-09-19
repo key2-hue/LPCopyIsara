@@ -406,6 +406,29 @@ header {
 
 /* seventh-sectionクラス */
 
+.seventh-section {
+  height: 380px;
+}
+
+.seventh-section > h2, .seventh-section > p {
+  text-align: center;
+}
+
+.seventh-section > h2 {
+  padding: 50px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learning-first {
+  padding-bottom: 20px;
+}
+
+.learning-second {
+  padding-top: 20px;
+  font-size: 15px;
+}
+
 .seventh-section > ul {
   display: flex;
   justify-content: space-around;
@@ -424,19 +447,15 @@ header {
 
 .icon-two > img {
   display: block;
-  height: 40px;
+  height: 120px;
   margin: 0 auto;
   background: #ebb94d;
-}
-
-.icon-two > p {
-  font-size: 12px;
-  text-align: center;
-  margin-top: 10px;
 }
 
 .icon-two:not(:first-child) {
   margin-left: 25px;
 }
+
+
 
 
