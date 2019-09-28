@@ -597,7 +597,8 @@ header {
 /* ninth-sectionクラス */
 
 .ninth-section {
-  height: 1450px;
+  /* height: 1450px; */
+  /* height: calc(100% + 20px); */
   background-image: url('https://isara.life/wp-content/themes/isara_v2/img/teacherbgsp.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -638,6 +639,10 @@ header {
   border: 3px solid #fff;
   width: calc(100vw - 25px);
   margin: 0 auto;
+}
+
+.member-fourth {
+  /* margin-bottom: 20px; */
 }
 
 .member-first > img,
@@ -745,25 +750,144 @@ header {
   margin: 0 auto;
 }
 
-/* eleventhクラス */
+/* eleventh-sectionクラス */
+
+
+
+.example {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.example > h2 {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.example > p:first-of-type {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.example > p:nth-of-type(2) {
+  font-size: 12px;
+  margin-top: 30px;
+}
 
 .first-example,
 .second-example,
 .third-example {
   display: flex;
-
 }
+
+.first-example {
+  margin-top: 30px;
+}
+
+.second-example,
+.third-example {
+  margin-top: 40px;
+}
+
+.third-example {
+  margin-bottom: 30px;
+}
+
 
 .first-example > img,
 .second-example > img,
 .third-example > img {
   display: block;
+  margin-left: 10px;
   height: calc(100vw * 0.3);
   width: calc(100vw * 0.3);
   border: 3px solid #ebb94d;
 }
 
+.first-example > p,
+.second-example > p,
+.third-example > p {
+  width: calc(100vw - (100vw * 0.3 + 50px));
+  margin: 0 auto;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
 
+.person {
+  color: gray;
+  border-bottom: 1px solid gray;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+  display: inline-block;
+  margin-top: 15px;
+  font-style: oblique;
+}
 
+/* twelfth-sectionクラス */
+
+.twelfth-section {
+  height: 950px;
+  width: 100vw;
+  background-image: url("https://isara.life/wp-content/themes/isara_v2/img/classbgsp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -120px;
+}
+
+.bangkok-learning {
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 1px;
+}
+
+.bangkok-learning > h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bangkok-learning > p {
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.previous-learning,
+.stay-learning {
+  width: calc(100vw - 20px);
+  margin: 0 auto;
+  text-align: center;
+  background: #016ea9;
+  border-radius: 5px;
+}
+
+.previous-learning {
+  margin-top: 30px;
+}
+
+.stay-learning {
+  margin-top: 15px;
+}
+
+.previous-learning > h2,
+.stay-learning > h2 {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+
+.previous-learning > p,
+.stay-learning > p {
+  background: #fff;
+  width: calc(100vw - 26px);
+  margin: 0 auto;
+  height: 40px;
+  border-bottom: 1px solid rgb(231, 230, 230);
+  line-height: 40px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
 
 
