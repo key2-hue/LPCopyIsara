@@ -641,9 +641,7 @@ header {
   margin: 0 auto;
 }
 
-.member-fourth {
-  /* margin-bottom: 20px; */
-}
+
 
 .member-first > img,
 .member-second > img,
@@ -862,16 +860,19 @@ header {
 
 .previous-learning {
   margin-top: 30px;
+  height: 462px;
 }
 
 .stay-learning {
   margin-top: 15px;
+  height: 299px;
 }
 
 .previous-learning > h2,
 .stay-learning > h2 {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  /* border-top-left-radius: 5px;
+  border-top-right-radius: 5px; */
+  border-radius: 5px;
   height: 50px;
   line-height: 50px;
   color: #fff;
@@ -888,6 +889,48 @@ header {
   font-size: 12px;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+/* thirteenth-sectionクラス */
+.thirteenth-section {
+  background: #016ea9;
+  color: white;
+  height: 100px;
+  text-align: center;
+}
+
+.thirteenth-section > p {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.thirteenth-section > p:first-child {
+  width: calc(100vw - 25px);
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* fourteenth-sectionクラス */
+
+.first-flow,
+.second-flow,
+.third-flow,
+.fourth-flow,
+.fifth-flow {
+  display: flex;
+}
+
+.first-flow > img,
+.second-flow > img,
+.third-flow > img,
+.fourth-flow > img,
+.fifth-flow > img {
+  height: 40px;
+}
+
+.first-flow > div {
+  flex: none;
 }
 
 
