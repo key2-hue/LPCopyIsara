@@ -913,24 +913,22 @@ header {
 
 /* fourteenth-sectionクラス */
 
-.first-flow,
-.second-flow,
-.third-flow,
-.fourth-flow,
-.fifth-flow {
+.first-flowSum,
+.second-flowSum,
+.third-flowSum,
+.fourth-flowSum,
+.fifth-flowSum {
   display: flex;
 }
 
-.first-flow > img,
-.second-flow > img,
-.third-flow > img,
-.fourth-flow > img,
-.fifth-flow > img {
+.first-flowSum > img,
+.second-flowSum > img,
+.third-flowSum > img,
+.fourth-flowSum > img,
+.fifth-flowSum > img {
   height: 40px;
-}
+  /* width: 50px; */
+} 
 
-.first-flow > div {
-  flex: none;
-}
 
 
