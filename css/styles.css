@@ -913,6 +913,12 @@ header {
 
 /* fourteenth-sectionクラス */
 
+.flow {
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+}
+
 .first-flowSum,
 .second-flowSum,
 .third-flowSum,
@@ -930,5 +936,271 @@ header {
   /* width: 50px; */
 } 
 
+.first-flowDetail,
+.second-flowDetail,
+.third-flowDetail,
+.fourth-flowDetail,
+.fifth-flowDetail,
+.sixth-flowDetail {
+  display:none;
+}
 
+/* fifteenth-sectionクラス */
+
+.fifteenth-section {
+  height: 340px;
+  background-image: url("https://isara.life/wp-content/themes/isara_v2/img/bangkokbgsp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.bangkok-reason {
+  width:calc(100vw - 70px);
+  margin: 0 auto;
+}
+
+.bangkok-reason > h2 {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 23px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+}
+
+.bangkok-reason > p:first-of-type {
+  font-size: 13px;
+  margin:20px 0 15px 0;
+}
+
+.bangkok-reasons > li {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.bangkok-reasons > li:not(:first-child) {
+  margin-top: 10px;
+}
+
+.bangkok-reason > p:last-of-type {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* sixteenth-sectionクラス */
+
+.sixteenth-section {
+  background: #f7c23c;
+  height: 550px;
+}
+
+.privilege {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.privilege > h2 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.privilege > p {
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+.privilege-span {
+  color: white;
+}
+
+.more-privilege > h2 {
+  position: relative; 
+  top: 40px;
+  background: #f7c23c;
+  width: 260px;
+  height: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 19px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.privilege-detail {
+  border: 2px solid #fff;
+  width: calc(100vw - 40px);
+  margin: 0 auto;
+  padding: 50px 0 50px;
+}
+
+.privilege-detail > li {
+  display: flex;
+  /* position: relative;
+  left: 40px; */
+  padding-left: 100px;
+  width: calc(100vw - 140px);
+}
+
+.privilege-detail > li:not(:first-child) {
+  margin-top: 15px;
+}
+
+.privilege-one > p:first-child,
+.privilege-two > p:first-child,
+.privilege-three > p:first-child {
+  color: #f7c23c;
+  background: #fff;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.privilege-one > p:last-child,
+.privilege-two > p:last-child,
+.privilege-three > p:last-child {
+  color: white;
+  /* line-height: 40px; */
+  position: relative; 
+  top: 10px;
+  font-size: 12px;
+  padding-left: 70px;
+  padding-right: 10px;
+  letter-spacing: 1px;
+  width:calc(100vw - 280px);
+}
+
+/* seventeenth-sectionクラス */
+
+.seventeenth-section {
+  height: 500px;
+  background-image: url("https://isara.life/wp-content/themes/isara_v2/img/specialdetailsp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.isara-value  {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  right: 10px;
+  /* width: calc(100vw - 10px); */
+  /* margin: 0 auto; */
+}
+
+.isara-value > h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.isara-value > h2:first-of-type {
+  /* padding-top: 40px; */
+  position: relative;
+  top: 40px;
+  letter-spacing: 1px;
+}
+
+.isara-value > h2:last-of-type {
+  letter-spacing: 2.5px;
+  position: relative;
+  bottom: 10px;
+  line-height: 2;
+}
+
+.isara-value > p:first-of-type,
+.isara-value > p:last-of-type {
+  font-size: 13px;
+}
+
+.isara-value > p:first-of-type {
+  position: relative;
+  top: 60px;
+}
+
+.isara-value > p:nth-of-type(2) {
+  text-align:left;
+  font-size: 60px;
+  position: relative;
+  top: 40px;
+}
+
+.isara-value > p:nth-of-type(3) {
+  text-align: right;
+  font-size: 60px;
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+}
+
+.isara-value > p:last-of-type {
+  position: relative;
+  bottom: 20px;
+}
+
+/* eighteenth-sectionクラス */
+
+.message {
+  width: calc(100vw - 30px);
+  margin: 0 auto;
+}
+
+
+.message > h2,
+.message > p:first-of-type {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.message > h2 {
+  padding-top: 40px;
+  font-size: 18px;
+}
+
+.message > p:first-of-type {
+  margin: 40px 0 20px 0;
+}
+
+.message > img {
+  display: block;
+  width: calc(100vw - 30px);
+}
+
+.message > p:not(:first-of-type),
+.message > ul {
+  font-size: 14.5px;
+  letter-spacing: 1px;
+}
+
+.message > p:nth-of-type(2) {
+  margin-top: 10px;
+}
+
+.message > p:nth-of-type(3) {
+  margin-top: 15px;
+}
+
+.message > ul {
+  margin: 30px 0;
+}
+
+.message > p:last-of-type {
+  margin-top: 10px;
+}
+
+.message {
+  padding-bottom: 40px;
+}
 
