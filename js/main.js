@@ -10,4 +10,17 @@ $(function(){
       twoParent.find('div:last-child').slideUp(300);
     }
   });
+  $('.fourteenth-section').not('.flow-js > img, .flow-js > p').on('click', function(){
+    $('.flow-js > p').removeClass('border');
+  });
+
+  $('.title').on('click', function(){
+    var parent = $(this).parent();
+    if(parent.find('div:last-child').is(':hidden')){
+      parent.find('div:last-child').slideDown(300);
+      // $(this).find('p').addClass('border');
+    } else {
+      parent.find('div:last-child').slideUp(300);
+    }
+  });
 });
