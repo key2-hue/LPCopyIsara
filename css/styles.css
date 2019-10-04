@@ -166,17 +166,24 @@ header {
   font-weight: bold;
 }
 
+.second-section > a:hover {
+  background: rgb(240, 58, 58);
+}
+
 .icon {
   display: flex;
   justify-content: center;
   position: relative;
   top: 160px;
+  height: 20px;
+  font-size: 12px;
 }
 
 .icon > li {
   display: flex;
   color: white;
   border-radius: 4px;
+  padding: 0 8px;
 }
 
 .icon-twitter {
@@ -1012,6 +1019,42 @@ header {
   user-select: none;
 }
 
+.detail {
+  width: calc(100vw - 55px);
+  margin: 0 auto;
+  padding-bottom: 25px;
+  color: #333333;
+}
+
+.detail > p:first-of-type {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.detail > p:nth-of-type(2) {
+  font-size: 12px;
+  margin-top: 10px;
+  letter-spacing: 1.5px;
+}
+
+.first-flowDetail > p:nth-of-type(2),
+.third-flowDetail > p:nth-of-type(2),
+.fourth-flowDetail > p:nth-of-type(2),
+.fifth-flowDetail > p:nth-of-type(2) {
+  font-weight: bold;
+}
+
+.detail > p:last-of-type {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.second-flowDetail > p:last-of-type {
+  font-weight: bold;
+}
+
 /* fifteenth-sectionクラス */
 
 .fifteenth-section {
@@ -1437,6 +1480,8 @@ header {
 footer {
   background: #ececec;
   text-align: center;
+  padding-bottom: 10px;
+  color: #333333;
 }
 
 .footer-one > p,
@@ -1458,17 +1503,21 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 15px;
+  height: 20px;
+  font-size: 12px;
 }
 
 .footer-icon > li {
   display: flex;
   color: white;
   border-radius: 4px;
+  padding: 0 8px;
 }
 
 .icon-twitter {
   background: #1b95e0;
   margin-right: 10px;
+  font-size: 12px;
 }
 
 .icon-up {
@@ -1481,7 +1530,19 @@ footer {
 
 .fa-twitter, .fa-thumbs-up {
   position: relative;
-  top: 5px;
+  right: 5px;
+  padding-left: 4px;
+}
+
+.footer-isara, .maya, .koga {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.footer-isara:hover, 
+.maya:hover, 
+.koga:hover {
+  text-decoration: underline;
 }
 
 

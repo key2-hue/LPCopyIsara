@@ -8,10 +8,11 @@ $(function(){
       $(this).parent().find('p').addClass('border');
     } else {
       twoParent.find('div:last-child').slideUp(300);
+      // $(this).parent().find('p').removeClass('border');
     }
   });
   $('.fourteenth-section').not('.flow-js > img, .flow-js > p').on('click', function(){
-    $('.flow-js > p').removeClass('border');
+    $('.display-main').parent().find('div > p:first-of-type').removeClass('border');
   });
 
   $('.title').on('click', function(){
