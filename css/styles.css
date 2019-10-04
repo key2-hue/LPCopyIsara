@@ -6,57 +6,201 @@
 /* header要素のCSS */
 
  @media (max-width: 768px ){
-   header {
+  header {
   width: 100vw;
   height: 60px;
   position: fixed;
   z-index: 1;
   background: white;
   }
+
+  .lesson {
+    float: left;
+    margin: 10px 0 0 10px;
+  }
+  
+  .left-title {
+    font-size: 11px;
+  }
+  
+  .isara-header {
+    display: block;
+    height: 30px;
+  }
+  
+  
+  .document {
+    background-color: rgb(219, 96, 96);
+    width: 80px;
+    height: 60px;
+    float: right;
+  }
+  
+  .document-icon {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 25px;
+  }
+  
+  .document-demand {
+    color:white;
+    text-align: center;
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
  }
 
  @media (min-width: 769px ) {
+  header {
+    width: 100vw;
+    height: 75px;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    }
+  
+  .lesson {
+    margin: 10px 0 0 10px;
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .left-title {
+    font-size: 12px;
+    color: #333333;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+    left: 5px;
+  }
+  
+  .isara-header {
+    display: block;
+    height: 45px;
+    position: relative;
+    top: 5px;
+  }
+  
+  
+  .document {
+    background-color: rgb(219, 96, 96);
+    height: 40px;
+    line-height: 40px;
+    float: right;
+    position: relative;
+    right: 15px;
+    top: 20px;
+    padding: 0 40px;
+    border-radius: 20px 20px;
+  }
 
+  .document > img {
+    display: none;
+  }
+  
+  .document-icon {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 25px;
+  }
+  
+  .media {
+    display: none;
+  }
+
+  .document-demand:before {
+    display: block;
+    color:white;
+    text-align: center;
+    position: relative;
+    font-size: 11px;
+    letter-spacing: 1px;
+    content: "お問い合わせ / 資料請求はこちら";
+  }
  }
 
-.lesson {
-  margin: 10px 0 0 10px;
-}
+ @media(min-width: 1191px) {
+  header {
+    width: 100vw;
+    height: 75px;
+    position: fixed;
+    z-index: 1;
+    background: white;
+    }
 
-.left-title {
-  font-size: 11px;
-}
+  .header-inside {
+    width: 1191px;
+    margin: 0 auto;
+  }
+  
+  .lesson {
+    margin: 10px 0 0 10px;
+    float: left;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .left-title {
+    font-size: 15px;
+    color: #333333;
+    font-weight: bold;
+    position: relative;
+    top: 25px;
+    left: 5px;
+    letter-spacing: 1px;
+  }
+  
+  .isara-header {
+    display: block;
+    height: 45px;
+    position: relative;
+    top: 5px;
+  }
+  
+  
+  .document {
+    background-color: rgb(219, 96, 96);
+    height: 45px;
+    line-height: 45px;
+    float: right;
+    position: relative;
+    right: 15px;
+    top: 15px;
+    padding: 0 40px;
+    border-radius: 22.5px 22.5px;
+  }
 
-.isara-header {
-  display: block;
-  height: 30px;
-}
+  .document > img {
+    display: none;
+  }
+  
+  .document-icon {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+    height: 25px;
+  }
+  
+  .media {
+    display: none;
+  }
 
-.lesson {
-  float: left;
-}
+  .document-demand:before {
+    display: block;
+    color:white;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 1px;
+    content: "お問い合わせ / 資料請求はこちら";
+  }
+ }
 
-.document {
-  background-color: rgb(219, 96, 96);
-  width: 80px;
-  height: 60px;
-  float: right;
-}
 
-.document-icon {
-  display: block;
-  margin: 0 auto;
-  padding-top: 10px;
-  height: 25px;
-}
-
-.document-demand {
-  color:white;
-  text-align: center;
-  position: relative;
-  font-size: 12px;
-  letter-spacing: 1px;
-}
 
 /* first-sectionのCSS要素 */
 
@@ -133,22 +277,39 @@
     top: 120px;
   }
   
+}
+
+@media(min-width: 768px) and (max-width: 1190px) {
   .nomado {
     position: relative;
     top: 160px;
     font-size: 16px;
     letter-spacing: 1px;
   }
-  
   .isara-bottom {
     position: relative;
     top: -8px;
   }
 }
 
-@media(min-width: 769px) {
-  .first-section > p:first-child, .first-section > p:nth-child(2) {
-    right: 58px;
+@media(max-width: 1190px) {
+  .first-section > p:first-child,
+  .first-section > p:nth-child(2){
+    font-size: 18px;
+  }
+}
+
+@media(min-width: 1191px) {
+  .nomado {
+    position: relative;
+    top: 160px;
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .isara-bottom {
+    position: relative;
+    top: -8px;
   }
 }
 
