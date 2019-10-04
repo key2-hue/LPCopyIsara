@@ -314,115 +314,410 @@
 }
 
 
-/* second-sectionのCSS要素 */
+/* second-sectionのCSS要素 レスポンシブデザインここから始める */
 
-.second-section {
-  position: relative;
-  top: 60px;
-  height: 470px;
-  background: #EBB94D;
+@media(max-width: 768px) {
+  .here::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .deadline-four::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .deadline-five::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .second-section {
+    position: relative;
+    top: 60px;
+    height: 470px;
+    background: #EBB94D;
+  }
+  
+  .second-section > p {
+    text-align: center;
+  }
+  
+  .second-section > p:not(:nth-child(3)){
+    color: white;
+  }
+  
+  .second-section > p:nth-child(1) {
+    position: relative;
+    top: 10px;
+  }
+  
+  .second-section > p:nth-child(2) {
+    position: relative;
+    top: 10px;
+  }
+  
+  .second-section > p:nth-child(3) {
+    background: #f9f2f4;
+    margin: 0 auto;
+    color: #c7254e;
+    position: relative;
+    top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 360px;
+    border-radius: 5px;
+  }
+  
+  .second-section > p:nth-child(5) {
+    position: relative;
+    top: 70px;
+  }
+  
+  .second-section > p:nth-child(6) {
+    position: relative;
+    top: 100px;
+  }
+  
+  .second-section > p:nth-child(7) {
+    position: relative;
+    top: 120px;
+  }
+  
+  .second-section > a {
+    position: relative;
+    top: 40px;
+    display: block;
+    background: #DA6B64;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    width: calc(100vw - 100px);
+    margin: 0 auto;
+    border-radius: 40px;
+    color: white;
+    line-height: 40px;
+    font-weight: bold;
+  }
+  
+  .second-section > a:hover {
+    background: rgb(240, 58, 58);
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 160px;
+    height: 20px;
+    font-size: 12px;
+  }
+  
+  .icon > li  {
+    border-radius: 4px;
+    padding: 0 8px;
+  }
+
+  .icon-li > a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .icon-twitter {
+    background: #1b95e0;
+    margin-right: 10px;
+  }
+  
+  .icon-up {
+    margin-right: 10px;
+  }
+  
+  .icon-up, .share {
+    background: #4267b2;
+  }
+  
+  .fa-twitter, .fa-thumbs-up {
+    position: relative;
+    top: 5px;
+  }
 }
 
-.second-section > p {
-  text-align: center;
+
+
+
+@media(min-width: 769px) {
+  .second-section {
+    position: relative;
+    top: 60px;
+    height: 470px;
+    background: #EBB94D;
+  }
+  
+  .second-section > p {
+    text-align: center;
+  }
+  
+  .second-section > p:not(:nth-child(3)){
+    color: white;
+  }
+  
+  .second-section > p:nth-child(1) {
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .second-section > p:nth-child(2) {
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .second-section > p:nth-child(3) {
+    background: #f9f2f4;
+    margin: 0 auto;
+    color: #c7254e;
+    position: relative;
+    top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 360px;
+    border-radius: 5px;
+  }
+  
+  .second-section > p:nth-child(5) {
+    position: relative;
+    top: 80px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .second-section > p:nth-child(6) {
+    position: relative;
+    top: 110px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .second-section > p:nth-child(7) {
+    position: relative;
+    top: 140px;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .second-section > a {
+    position: relative;
+    top: 55px;
+    display: block;
+    background: #DA6B64;
+    height: 80px;
+    text-align: center;
+    text-decoration: none;
+    width: calc(100vw - 170px);
+    margin: 0 auto;
+    border-radius: 40px;
+    color: white;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  
+  .second-section > a:hover {
+    background: rgb(240, 58, 58);
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 170px;
+    height: 20px;
+    font-size: 12px;
+  }
+  
+  .icon > li  {
+    border-radius: 4px;
+    padding: 0 8px;
+  }
+
+  .icon-li > a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .icon-twitter {
+    background: #1b95e0;
+    margin-right: 10px;
+  }
+  
+  .icon-up {
+    margin-right: 10px;
+  }
+  
+  .icon-up, .share {
+    background: #4267b2;
+  }
+  
+  .fa-twitter, .fa-thumbs-up {
+    position: relative;
+    top: 5px;
+  }
 }
 
-.second-section > p:not(:nth-child(3)){
-  color: white;
+
+
+
+
+
+
+@media(min-width: 1191px) {
+  .second-section {
+    position: relative;
+    top: 60px;
+    height: 600px;
+    background: #EBB94D;
+  }
+  
+  .second-section > p {
+    text-align: center;
+  }
+  
+  .second-section > p:not(:nth-child(3)){
+    color: white;
+  }
+  
+  .second-section > p:nth-child(1) {
+    position: relative;
+    top: 30px;
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .second-section > p:nth-child(2) {
+    position: relative;
+    top: 30px;
+    font-size: 21px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .second-section > p:nth-child(3) {
+    background: #f9f2f4;
+    margin: 0 auto;
+    color: #c7254e;
+    position: relative;
+    top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 470px;
+    border-radius: 5px;
+  }
+  
+  .second-section > p:nth-child(5) {
+    position: relative;
+    top: 140px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .second-section > p:nth-child(6) {
+    position: relative;
+    top: 170px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .second-section > p:nth-child(7) {
+    position: relative;
+    top: 210px;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .second-section > a {
+    position: relative;
+    top: 85px;
+    display: block;
+    background: #DA6B64;
+    height: 100px;
+    text-align: center;
+    text-decoration: none;
+    width: calc(100vw - 180px);
+    margin: 0 auto;
+    border-radius: 50px;
+    color: white;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  
+  .second-section > a:hover {
+    background: rgb(240, 58, 58);
+  }
+  
+  .icon {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 240px;
+    height: 20px;
+    font-size: 12px;
+  }
+  
+  .icon > li  {
+    border-radius: 4px;
+    padding: 0 8px;
+  }
+
+  .icon-li > a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .icon-twitter {
+    background: #1b95e0;
+    margin-right: 10px;
+  }
+  
+  .icon-up {
+    margin-right: 10px;
+  }
+  
+  .icon-up, .share {
+    background: #4267b2;
+  }
+  
+  .fa-twitter, .fa-thumbs-up {
+    position: relative;
+    top: 5px;
+  }
+
+
+
 }
 
-.second-section > p:nth-child(1) {
-  position: relative;
-  top: 10px;
-}
-
-.second-section > p:nth-child(2) {
-  position: relative;
-  top: 10px;
-}
-
-.second-section > p:nth-child(3) {
-  background: white;
-  width: 420px;
-  margin: 0 auto;
-  color: red;
-  position: relative;
-  top: 20px;
-}
-
-.second-section > p:nth-child(5) {
-  position: relative;
-  top: 70px;
-}
-
-.second-section > p:nth-child(6) {
-  position: relative;
-  top: 100px;
-}
-
-.second-section > p:nth-child(7) {
-  position: relative;
-  top: 120px;
-}
 
 
 
 
 
-
-.second-section > a {
-  position: relative;
-  top: 40px;
-  display: block;
-  background: #DA6B64;
-  height: 80px;
-  text-align: center;
-  text-decoration: none;
-  width: calc(100vw - 100px);
-  margin: 0 auto;
-  border-radius: 40px;
-  color: white;
-  line-height: 40px;
-  font-weight: bold;
-}
-
-.second-section > a:hover {
-  background: rgb(240, 58, 58);
-}
-
-.icon {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  top: 160px;
-  height: 20px;
-  font-size: 12px;
-}
-
-.icon > li {
-  display: flex;
-  color: white;
-  border-radius: 4px;
-  padding: 0 8px;
-}
-
-.icon-twitter {
-  background: #1b95e0;
-  margin-right: 10px;
-}
-
-.icon-up {
-  margin-right: 10px;
-}
-
-.icon-up, .share {
-  background: #4267b2;
-}
-
-.fa-twitter, .fa-thumbs-up {
-  position: relative;
-  top: 5px;
-}
 
 /* third-sectionクラスのCSS要素 */
 
