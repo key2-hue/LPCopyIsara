@@ -24,4 +24,12 @@ $(function(){
       parent.find('div:last-child').slideUp(300);
     }
   });
+
+  // var x = $(window).width();
+  // var y = 769;
+  // if( x > y ){
+  //   $('.document-demand').text('お問い合わせ / 資料請求はこちら');
+  // } else {
+  //   $('.document-demand').text('資料請求');
+  // }
 });
