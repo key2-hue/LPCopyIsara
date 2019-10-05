@@ -1,6 +1,11 @@
 * {
   user-select: none;
+  /* overflow-x: hidden; */
 }
+
+/* small max-width: 768px
+  madium min-width: 769px
+  large min-width: 1191px
 
 
 /* header要素のCSS */
@@ -52,7 +57,7 @@
   }
  }
 
- @media (min-width: 769px ) {
+ @media (min-width: 769px ) and (max-width: 1190px) {
   header {
     width: 100vw;
     height: 75px;
@@ -721,66 +726,234 @@
 
 /* third-sectionクラスのCSS要素 */
 
-.third-section {
-  margin-top: 70px;
-  height: 770px;
-  width: 100vw;
-  background-image: url("https://isara.life/wp-content/themes/isara_v2/img/introbottom.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
+
+@media(max-width: 768px){
+  .freedom::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .freedom-sm::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .third-section {
+    margin-top: 70px;
+    height: 650px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/introbottom.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+  
+  .blacket-inside {
+    text-align: center;
+    font-size: 19px;
+    position: relative;
+    bottom: 30px;
+    line-height: 40px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .blacket-first, .blacket-second {
+    color: #ebb94d;
+    font-size: 50px;
+  }
+  
+  .blacket-first {
+    text-align: left;
+  }
+  
+  .blacket-second {
+    text-align: right;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .blacket-blacket {
+    position: relative;
+    bottom: 100px;
+    color: #333333;
+    font-size: 15px;
+  }
+  
+  .third-first, .third-second, .third-third,.third-fourth {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .earning {
+    border-bottom: 4px solid orange;
+    font-weight: bold;
+  }
 }
 
-.third-section > .blacket-inside {
-  text-align: center;
-  font-size: 20px;
+
+
+
+
+
+
+@media(min-width: 769px){
+  .freedom::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .third-section {
+    margin-top: 70px;
+    height: 570px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/introbottom.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+  }
+  
+  .blacket-inside {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 30px;
+    line-height: 40px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .blacket-first, .blacket-second {
+    color: #ebb94d;
+    font-size: 50px;
+  }
+  
+  .blacket-first {
+    text-align: left;
+    position: relative;
+    top: 10px;
+  }
+  
+  .blacket-second {
+    text-align: right;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .blacket-blacket {
+    position: relative;
+    bottom: 60px;
+    color: #333333;
+    font-size: 17px;
+  }
+  
+  .third-first, .third-second,.third-fourth {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .third-third {
+    text-align: center;
+  }
+  
+  .earning {
+    border-bottom: 4px solid orange;
+    font-weight: bold;
+  }
 }
 
-.blacket-first, .blacket-second {
-  color: #ebb94d;
-  font-size: 50px;
+
+
+
+
+
+
+
+@media(min-width: 1191px){
+  .freedom::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .third-section {
+    margin-top: 70px;
+    height: 570px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/introbottom.jpg");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .blacket-freedom {
+    width: 900px;
+    margin: 0 auto;
+  }
+  
+  .blacket-inside {
+    text-align: center;
+    font-size: 30px;
+    position: relative;
+    bottom: 30px;
+    line-height: 40px;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  .blacket-first, .blacket-second {
+    color: #ebb94d;
+    font-size: 50px;
+  }
+  
+  .blacket-first {
+    text-align: left;
+    position: relative;
+    top: 10px;
+  }
+  
+  .blacket-second {
+    text-align: right;
+    position: relative;
+    bottom: 80px;
+  }
+
+  .blacket-blacket {
+    position: relative;
+    bottom: 60px;
+    color: #333333;
+    font-size: 21px;
+  }
+  
+  .third-first, .third-second,.third-fourth {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .third-third {
+    text-align: center;
+  }
+  
+  .earning {
+    border-bottom: 4px solid orange;
+    font-weight: bold;
+  }
 }
 
-.blacket-first {
-  text-align: left;
-}
-
-.blacket-second {
-  text-align: right;
-}
-
-.third-first, .third-second, .third-third,.third-fourth {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.earning {
-  border-bottom: 4px solid orange;
-  font-weight: bold;
-}
 
 
-/* .third-first {
-  width: 200px;
-  word-break: break-word;
-  text-align: center;
-} */
 
-/* fourth-sectionクラス */
 
-@media(max-width:668px){
+
+/* fourth-sectionクラス ここからレスポンシブデザインやる */
+
+@media(max-width:768px){
 .fourth-section {
   /* margin-top: 70px; */
   height: 600px;
   background: #fef5e0;
 }
-}
 
-@media(min-width:669px){
-  .fourth-section {
-    /* margin-top: 70px; */
-    height: 560px;
-    background: #fef5e0;
-  }
+.isara-sm::before {
+  content: "\A";
+  white-space: pre;
 }
 
 .about {
@@ -862,10 +1035,213 @@
   margin-top: 10px;
 }
 
+
+}
+
+
+
+@media(min-width:769px){
+  .fourth-section {
+    padding-bottom: 70px;
+    /* height: 560px; */
+    background: #fef5e0;
+  }
+
+  .about {
+    height: 80px;
+    width: 80px;
+    background: #ebb94d;
+    line-height: 80px;
+    border-radius: 50%;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: 40px;
+    letter-spacing: 1px;
+  }
+  
+  .blacket-third, .blacket-fourth {
+    color: #ebb94d;
+    font-size: 50px;
+  }
+  
+  .blacket-third {
+    text-align: left;
+    position: relative;
+    bottom: 10px;
+  }
+  
+  .blacket-insideTwo {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+    position: relative;
+    bottom: 40px;
+    letter-spacing: 1px;
+  }
+  
+  .blacket-fourth {
+    text-align: right;
+    position: relative;
+    bottom: 60px;
+  }
+  
+  .earning-lesson{
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+    font-weight: bold;
+    color: #333333;
+    letter-spacing: 1.5px;
+  }
+  
+  .icon-five {
+    background: white;
+    width: calc(100vw - 60px);
+    margin: 0 auto;
+    border: 2px solid #ebb94d;
+    border-radius: 5px;
+  }
+  
+  .icon-five > p {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #333333;
+    letter-spacing: 1px;
+  }
+  
+  .icon-five > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(100vw - 130px);
+    margin: 20px auto 0;
+    padding-bottom: 20px;
+    /* line-height: 100px; */
+  }
+
+  .icons > li {
+    height: 140px;
+  }
+  
+  .icon-one {
+    justify-self: center;
+  }
+  
+  .icon-one:not(:first-child) {
+    margin-left: 25px;
+  }
+  
+  .icon-one > img {
+    display: block;
+    height: 55px;
+    margin: 0 auto;
+  }
+  
+  .icon-one > p {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10px;
+    color: #333333;
+    letter-spacing: 1px;
+  }
+
+}
+
+
+
+@media(min-width: 1191px) {
+  .about {
+    height: 60px;
+    width: 60px;
+    background: #ebb94d;
+    line-height: 60px;
+    border-radius: 50%;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    bottom: 30px;
+  }
+  
+  .blacket-third, .blacket-fourth {
+    color: #ebb94d;
+    font-size: 50px;
+  }
+  
+  .blacket-third {
+    text-align: left;
+  }
+  
+  .blacket-insideTwo {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .blacket-fourth {
+    text-align: right;
+  }
+  
+  .earning-lesson{
+    text-align: center;
+  }
+  
+  .icon-five {
+    background: white;
+    width: calc(100vw - 60px);
+    margin: 20px auto 0;
+    border: 2px solid #ebb94d;
+    border-radius: 5px;
+  }
+  
+  .icon-five > p {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .icon-five > ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: calc(100vw - 140px);
+    margin: 10px auto 0;
+    padding-bottom: 20px;
+  }
+  
+  .icon-one {
+    justify-self: center;
+  }
+  
+  .icon-one:not(:first-child) {
+    margin-left: 25px;
+  }
+  
+  .icon-one > img {
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+  }
+  
+  .icon-one > p {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+
+
 /* fifth-sectionクラス */
 
 .fifth-section {
   height: 600px;
+  width: 100vw;
   background-image: url("https://isara.life/wp-content/themes/isara_v2/img/aboutsecondbgsp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
