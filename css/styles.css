@@ -1393,7 +1393,7 @@
   }
   
   .step {
-    width: calc(100vw - 700px);
+    width: calc((100vw - 300px)/ 2);
     margin: 0 auto;
   }
   
@@ -1410,7 +1410,7 @@
   }
   
   .step-li > p:first-child {
-    width: calc(100vw - 750px);
+    width: calc((100vw - 450px) / 2);
     margin: 0 auto 40px;
     background: #ebb94d;
     color: white;
