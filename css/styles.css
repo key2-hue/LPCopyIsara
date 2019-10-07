@@ -2450,12 +2450,12 @@
 
 @media(min-width: 1191px) and (max-width: 1199px) {
   .eigth-section {
-    height: 1520px;
+    height: 1080px;
     background: #fef5e0;
   }
 
   .blacket-merit {
-    width: calc(100vw - 70px);
+    width: calc(100vw - 260px);
     margin: 0 auto;
   }
   
@@ -2479,11 +2479,12 @@
     font-weight: bold;
     color: #333333;
     letter-spacing: 1px;
+    font-size: 20px;
   }
 
   
   .merit {
-    font-size: 25px;
+    font-size: 29px;
     color: #333333;
     letter-spacing: 1px;
     font-weight: bold;
@@ -2501,11 +2502,24 @@
     position: relative;
     bottom: 20px;
   }
+
+  .merits-flex {
+    display: flex;
+    width: calc(100vw - 250px);
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .merit-first,
+  .merit-second,
+  .merit-third {
+    width: 300px;
+  }
   
   .merit-first > img,
   .merit-second > img,
   .merit-third > img {
-    width: 300px;
+    width: 290px;
     display: block;
     margin: 0 auto;
     height: 180px;
@@ -2516,28 +2530,30 @@
   .merit-first > p,
   .merit-second > p,
   .merit-third > p {
-    width: calc(100vw - 165px);
     margin: 0 auto;
   }
   
   .merit-first > p:first-of-type,
   .merit-second > p:first-of-type,
   .merit-third > p:first-of-type {
-    text-align: center;
+    text-align: left;
     color:#ebb94d;
     margin: 10px auto;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-weight: bold;
-    width: calc(100vw - 180px);
+    width: calc((100vw - 320px) / 3);
+    font-size: 20px;
   }
   
   .merit-first > p:nth-of-type(2),
   .merit-second > p:nth-of-type(2),
   .merit-third > p:nth-of-type(2) {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1.5px;
-    margin-bottom: 20px;
+    margin:0 auto 20px;
     font-weight: normal;
+    width: calc((100vw - 330px) / 3);
+    color: #333333;
   }
 
   .difference-lg::before {
@@ -2547,8 +2563,8 @@
   
   .caution-first {
     background: #fff;
-    width: calc(100vw - 140px);
-    margin: 70px auto 15px;
+    width: calc(100vw - 50px);
+    margin: 40px auto 15px;
     border: 2px solid #ebb94d;
     border-radius: 5px;
     padding-bottom: 30px;
@@ -2561,22 +2577,22 @@
   .caution-first > p:first-child {
     color: #ebb94d;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
   
   .caution-first > p:nth-child(2) {
     margin: 10px auto 0;
     letter-spacing: 1px;
     width: calc(100vw - 190px);
-    font-size: 17px;
+    font-size: 20px;
     color: #333333;
     font-weight: bold;
   }
   
   .caution-first > p:nth-child(3), .caution-first > p:last-child {
-    font-size: 14px;
+    font-size: 16px;
     width: calc(100vw - 180px);
     margin: 0 auto;
     font-weight: bold;
@@ -2594,11 +2610,12 @@
   
   .caution-second > p {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     width: calc(100vw - 90px);
     margin: 40px auto 0;
     line-height: 1.6;
     color: #333333;
+    letter-spacing: 1px;
   }
 }
 
@@ -2608,12 +2625,12 @@
 
 @media(min-width: 1200px) {
   .eigth-section {
-    height: 1520px;
+    height: 1080px;
     background: #fef5e0;
   }
 
   .blacket-merit {
-    width: calc(100vw - 70px);
+    width: calc(100vw - 400px);
     margin: 0 auto;
   }
   
@@ -2637,11 +2654,12 @@
     font-weight: bold;
     color: #333333;
     letter-spacing: 1px;
+    font-size: 20px;
   }
 
   
   .merit {
-    font-size: 25px;
+    font-size: 29px;
     color: #333333;
     letter-spacing: 1px;
     font-weight: bold;
@@ -2659,16 +2677,24 @@
     position: relative;
     bottom: 20px;
   }
-  
+
   .merits-flex {
     display: flex;
-    width: calc(100vw - 40px);
+    width: 1130px;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .merit-first,
+  .merit-second,
+  .merit-third {
+    width: 400px;
   }
   
   .merit-first > img,
   .merit-second > img,
   .merit-third > img {
-    width: 300px;
+    width: 350px;
     display: block;
     margin: 0 auto;
     height: 180px;
@@ -2679,28 +2705,30 @@
   .merit-first > p,
   .merit-second > p,
   .merit-third > p {
-    width: calc(100vw - 165px);
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   
   .merit-first > p:first-of-type,
   .merit-second > p:first-of-type,
   .merit-third > p:first-of-type {
-    text-align: center;
+    text-align: left;
     color:#ebb94d;
     margin: 10px auto;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     font-weight: bold;
-    width: calc(100vw - 180px);
+    width: 350px;
+    font-size: 20px;
   }
   
   .merit-first > p:nth-of-type(2),
   .merit-second > p:nth-of-type(2),
   .merit-third > p:nth-of-type(2) {
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1.5px;
-    margin-bottom: 20px;
+    margin:0 0 20px 10px;
     font-weight: normal;
+    width: 340px;
+    color: #333333;
   }
 
   .difference-lg::before {
@@ -2710,8 +2738,8 @@
   
   .caution-first {
     background: #fff;
-    width: calc(100vw - 140px);
-    margin: 70px auto 15px;
+    width: 1200px;
+    margin: 40px auto 15px;
     border: 2px solid #ebb94d;
     border-radius: 5px;
     padding-bottom: 30px;
@@ -2724,22 +2752,22 @@
   .caution-first > p:first-child {
     color: #ebb94d;
     margin-top: 40px;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
   }
   
   .caution-first > p:nth-child(2) {
     margin: 10px auto 0;
     letter-spacing: 1px;
     width: calc(100vw - 190px);
-    font-size: 17px;
+    font-size: 20px;
     color: #333333;
     font-weight: bold;
   }
   
   .caution-first > p:nth-child(3), .caution-first > p:last-child {
-    font-size: 14px;
+    font-size: 16px;
     width: calc(100vw - 180px);
     margin: 0 auto;
     font-weight: bold;
@@ -2757,11 +2785,12 @@
   
   .caution-second > p {
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     width: calc(100vw - 90px);
     margin: 40px auto 0;
     line-height: 1.6;
     color: #333333;
+    letter-spacing: 1px;
   }
 }
 
