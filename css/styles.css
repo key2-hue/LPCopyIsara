@@ -3898,73 +3898,414 @@
 
 /* twelfth-sectionクラス */
 
-.twelfth-section {
-  height: 950px;
-  width: 100vw;
-  background-image: url("https://isara.life/wp-content/themes/isara_v2/img/classbgsp.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center -120px;
+@media (max-width:768px) {
+  .twelfth-section {
+    height: 950px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/classbgsp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -120px;
+  }
+  
+  .bangkok-learning {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 1px;
+  }
+  
+  .bangkok-learning > h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .bangkok-learning > p {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  
+  .previous-learning,
+  .stay-learning {
+    width: calc(100vw - 20px);
+    margin: 0 auto;
+    text-align: center;
+    background: #016ea9;
+    border-radius: 5px;
+  }
+  
+  .previous-learning {
+    margin-top: 30px;
+    height: 462px;
+  }
+  
+  .stay-learning {
+    margin-top: 15px;
+    height: 299px;
+  }
+  
+  .previous-learning > h2,
+  .stay-learning > h2 {
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    border-radius: 5px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+  }
+  
+  .previous-learning > p,
+  .stay-learning > p {
+    background: #fff;
+    width: calc(100vw - 26px);
+    margin: 0 auto;
+    height: 40px;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    line-height: 40px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
 }
 
-.bangkok-learning {
-  color: #fff;
-  text-align: center;
-  padding-top: 50px;
-  letter-spacing: 1px;
+@media (min-width:769px) and (max-width: 991px) {
+  .twelfth-section {
+    height: 1050px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .bangkok-learning {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 1px;
+  }
+  
+  .bangkok-learning > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  
+  .bangkok-learning > p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .previous-learning,
+  .stay-learning {
+    width: 620px;
+    margin: 0 auto;
+    text-align: center;
+    background: #016ea9;
+    border-radius: 5px;
+  }
+  
+  .previous-learning {
+    margin-top: 30px;
+    height: 492px;
+  }
+  
+  .stay-learning {
+    margin-top: 15px;
+    height: 320px;
+  }
+  
+  .previous-learning > h2,
+  .stay-learning > h2 {
+    /* border-top-left-radius: 5px;
+    border-top-right-radius: 5px; */
+    border-radius: 5px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+  }
+  
+  .previous-learning > p,
+  .stay-learning > p {
+    background: #fff;
+    width: 617px;
+    margin: 0 auto;
+    height: 42px;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    line-height: 42px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
 }
 
-.bangkok-learning > h2 {
-  font-size: 18px;
-  font-weight: bold;
+
+/*ここからレスポンシブデザインの練習をする */
+
+@media (min-width:992px) and (max-width: 1030px) {
+  .twelfth-section {
+    height: 800px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .bangkok-learning {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 1px;
+  }
+  
+  .bangkok-learning > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  
+  .bangkok-learning > p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .previousAndCurrent {
+    display: flex;
+    width: 600px;
+    margin: 50px auto 0;
+  }
+  
+  .previous-learning,
+  .stay-learning {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    background: #016ea9;
+    border-radius: 5px;
+  }
+  
+  .previous-learning {
+    height: 492px;
+  }
+
+  
+  .stay-learning {
+    height: 320px;
+  }
+  
+  .previous-learning > h2,
+  .stay-learning > h2 {
+    border-radius: 5px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .previous-learning > p,
+  .stay-learning > p {
+    background: #fff;
+    width: 277px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .previous-learning > p:first-of-type {
+    height: 80px; 
+    line-height: 1.2;
+  }
+
+  .from {
+    position: relative; 
+    top: 30px;
+    display: inline-block;
+    width: 250px;
+  }
 }
 
-.bangkok-learning > p {
-  font-size: 12px;
-  margin-top: 20px;
+
+@media (min-width:1031px) and (max-width: 1190px) {
+  .twelfth-section {
+    height: 800px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .bangkok-learning {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 1px;
+  }
+  
+  .bangkok-learning > h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  
+  .bangkok-learning > p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .previousAndCurrent {
+    display: flex;
+    width: 600px;
+    margin: 50px auto 0;
+  }
+  
+  .previous-learning,
+  .stay-learning {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    background: #016ea9;
+    border-radius: 5px;
+  }
+  
+  .previous-learning {
+    height: 492px;
+  }
+
+  
+  .stay-learning {
+    height: 320px;
+  }
+  
+  .previous-learning > h2,
+  .stay-learning > h2 {
+    border-radius: 5px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .previous-learning > p,
+  .stay-learning > p {
+    background: #fff;
+    width: 277px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .previous-learning > p:first-of-type {
+    height: 80px; 
+    line-height: 1.2;
+  }
+
+  .from {
+    position: relative; 
+    top: 30px;
+    display: inline-block;
+    width: 230px;
+  }
 }
 
-.previous-learning,
-.stay-learning {
-  width: calc(100vw - 20px);
-  margin: 0 auto;
-  text-align: center;
-  background: #016ea9;
-  border-radius: 5px;
+
+
+@media (min-width: 1191px) {
+  .twelfth-section {
+    height: 800px;
+    width: 100vw;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/classbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .bangkok-learning {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    letter-spacing: 1px;
+  }
+  
+  .bangkok-learning > h2 {
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+  
+  .bangkok-learning > p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .previousAndCurrent {
+    display: flex;
+    width: 800px;
+    margin: 50px auto 0;
+  }
+  
+  .previous-learning,
+  .stay-learning {
+    width: 370px;
+    margin: 0 auto;
+    text-align: center;
+    background: #016ea9;
+    border-radius: 5px;
+  }
+  
+  .previous-learning {
+    height: 552px;
+  }
+
+  
+  .stay-learning {
+    height: 355px;
+  }
+  
+  .previous-learning > h2,
+  .stay-learning > h2 {
+    border-radius: 5px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  
+  .previous-learning > p,
+  .stay-learning > p {
+    background: #fff;
+    width: 367px;
+    margin: 0 auto;
+    border-bottom: 1px solid rgb(231, 230, 230);
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  
+
+  .from {
+    /* position: relative; 
+    top: 30px; */
+    display: inline-block;
+    /* width: 230px; */
+  }
 }
 
-.previous-learning {
-  margin-top: 30px;
-  height: 462px;
-}
 
-.stay-learning {
-  margin-top: 15px;
-  height: 299px;
-}
-
-.previous-learning > h2,
-.stay-learning > h2 {
-  /* border-top-left-radius: 5px;
-  border-top-right-radius: 5px; */
-  border-radius: 5px;
-  height: 50px;
-  line-height: 50px;
-  color: #fff;
-}
-
-.previous-learning > p,
-.stay-learning > p {
-  background: #fff;
-  width: calc(100vw - 26px);
-  margin: 0 auto;
-  height: 40px;
-  border-bottom: 1px solid rgb(231, 230, 230);
-  line-height: 40px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
 
 /* thirteenth-sectionクラス */
 .thirteenth-section {
