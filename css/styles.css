@@ -3205,68 +3205,292 @@
 
 
 
-/* tenth-sectionクラス */
-.tenth-section {
-  height: 210px;
-  background: #ebb94d;
+
+
+/* tenth-sectionクラス  ここからレスポンシブデザイン    */
+/* small max-width: 768px
+  madium min-width: 769px
+  large min-width: 1191px */
+
+@media(max-width: 768px) {
+  .tenth-section {
+    height: 210px;
+    background: #ebb94d;
+  }
+  
+  .questionAndAnswer {
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+  }
+  
+  .questionAndAnswer > p {
+    line-height: 60px;
+    text-align: center;
+    color: #ebb94d;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+  }
+  
+  .nomad {
+    color: #fff;
+    height: 150px;
+  }
+  
+  .nomad > p:first-child {
+    position: relative;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .nomad > p:nth-child(2) {
+    position: relative;
+    bottom: 35px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  
+  .nomad > p:last-child {
+    text-align: right;
+    position: relative;
+    bottom: 80px;
+  }
+  
+  .nomad > p:first-child,
+  .nomad > p:last-child {
+    font-size: 50px;
+  }
+  
+  .triangle {
+    border-top: 20px solid #ebb94d;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    width: 0;
+    margin: 0 auto;
+  }
 }
 
-.questionAndAnswer {
-  background: #fff;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  margin: 0 auto;
-  position: relative;
-  top: 20px;
+
+
+@media(min-width: 769px) and (max-width: 908px) {
+  .tenth-section {
+    height: 270px;
+    background: #ebb94d;
+  }
+  
+  .questionAndAnswer {
+    background: #fff;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+  }
+  
+  .questionAndAnswer > p {
+    line-height: 75px;
+    text-align: center;
+    color: #ebb94d;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  
+  .nomad {
+    color: #fff;
+    height: 150px;
+  }
+  
+  .nomad > p:first-child {
+    position: relative;
+    top: 30px;
+    right: 30px;
+    /* font-size: 25px; */
+  }
+  
+  .nomad > p:nth-child(2) {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .nomad > p:last-child {
+    text-align: right;
+    position: relative;
+    bottom: 100px;
+    left: 30px;
+  }
+  
+  .nomad > p:first-child,
+  .nomad > p:last-child {
+    font-size: 70px;
+  }
+  
+  .triangle {
+    border-top: 25px solid #ebb94d;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    width: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+  }
 }
 
-.questionAndAnswer > p {
-  line-height: 60px;
-  text-align: center;
-  color: #ebb94d;
-  font-size: 12px;
-  letter-spacing: 1.5px;
+
+
+@media(min-width: 909px) and (max-width: 1190px) {
+  .tenth-section {
+    height: 270px;
+    background: #ebb94d;
+  }
+  
+  .questionAndAnswer {
+    background: #fff;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+  }
+  
+  .questionAndAnswer > p {
+    line-height: 75px;
+    text-align: center;
+    color: #ebb94d;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  
+  .nomad {
+    color: #fff;
+    height: 150px;
+    width: 909px;
+    margin: 0 auto;
+  }
+  
+  .nomad > p:first-child {
+    position: relative;
+    top: 30px;
+    right: 30px;
+    /* font-size: 25px; */
+  }
+  
+  .nomad > p:nth-child(2) {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .nomad > p:last-child {
+    text-align: right;
+    position: relative;
+    bottom: 100px;
+    left: 30px;
+  }
+  
+  .nomad > p:first-child,
+  .nomad > p:last-child {
+    font-size: 70px;
+  }
+  
+  .triangle {
+    border-top: 25px solid #ebb94d;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    width: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 45px;
+  }
 }
 
-.nomad {
-  color: #fff;
-  height: 150px;
+
+
+@media(min-width: 1191px) {
+  .tenth-section {
+    height: 270px;
+    background: #ebb94d;
+  }
+  
+  .questionAndAnswer {
+    background: #fff;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+  }
+  
+  .questionAndAnswer > p {
+    line-height: 80px;
+    text-align: center;
+    color: #ebb94d;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+  
+  .nomad {
+    color: #fff;
+    height: 150px;
+    width: 909px;
+    margin: 0 auto;
+  }
+  
+  .nomad > p:first-child {
+    position: relative;
+    top: 20px;
+    right: 10px;
+  }
+  
+  .nomad > p:nth-child(2) {
+    position: relative;
+    bottom: 55px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 26px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  
+  .nomad > p:last-child {
+    text-align: right;
+    position: relative;
+    bottom: 120px;
+  }
+  
+  .nomad > p:first-child,
+  .nomad > p:last-child {
+    font-size: 70px;
+  }
+  
+  .triangle {
+    border-top: 25px solid #ebb94d;
+    border-right: 25px solid transparent;
+    border-left: 25px solid transparent;
+    width: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+  }
 }
 
-.nomad > p:first-child {
-  position: relative;
-  top: 10px;
-  right: 10px;
-}
-
-.nomad > p:nth-child(2) {
-  position: relative;
-  bottom: 35px;
-  text-align: center;
-  line-height: 2.5;
-  font-size: 15px;
-  letter-spacing: 1px;
-}
-
-.nomad > p:last-child {
-  text-align: right;
-  position: relative;
-  bottom: 80px;
-}
-
-.nomad > p:first-child,
-.nomad > p:last-child {
-  font-size: 50px;
-}
-
-.triangle {
-  border-top: 20px solid #ebb94d;
-  border-right: 20px solid transparent;
-  border-left: 20px solid transparent;
-  width: 0;
-  margin: 0 auto;
-}
 
 /* eleventh-sectionクラス */
 
