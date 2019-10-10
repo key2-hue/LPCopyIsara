@@ -4857,7 +4857,6 @@
 }
 
 
-/* ここからレスポンシブデザインやる  */
 
 
 
@@ -5038,47 +5037,153 @@
 
 /* fifteenth-sectionクラス */
 
-.fifteenth-section {
-  height: 340px;
-  background-image: url("https://isara.life/wp-content/themes/isara_v2/img/bangkokbgsp.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: white;
+/* small max-width: 768px
+  madium min-width: 769px
+  large min-width: 1191px */
+
+
+@media(max-width: 768px) {
+  .fifteenth-section {
+    height: 340px;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/bangkokbgsp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+  }
+  
+  .bangkok-reason {
+    width:calc(100vw - 70px);
+    margin: 0 auto;
+  }
+  
+  .bangkok-reason > h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  
+  .bangkok-reason > p:first-of-type {
+    font-size: 13px;
+    margin:20px 0 15px 0;
+  }
+  
+  .bangkok-reasons > li {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  .bangkok-reasons > li:not(:first-child) {
+    margin-top: 10px;
+  }
+  
+  .bangkok-reason > p:last-of-type {
+    margin-top: 20px;
+    font-weight: bold;
+  }
 }
 
-.bangkok-reason {
-  width:calc(100vw - 70px);
-  margin: 0 auto;
+
+
+
+@media(min-width: 769px) and (max-width: 1190px) {
+  .fifteenth-section {
+    height: 390px;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/bangkokbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+  }
+  
+  .bangkok-reason {
+    width:calc(100vw - 120px);
+    margin: 0 auto;
+  }
+  
+  .bangkok-reason > h2 {
+    padding-top: 60px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .bangkok-reason > p:first-of-type {
+    font-size: 12px;
+    margin:20px 0;
+  }
+  
+  .bangkok-reasons > li {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  .bangkok-reasons > li:not(:first-child) {
+    margin-top: 10px;
+  }
+  
+  .bangkok-reason > p:last-of-type {
+    margin-top: 20px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
 }
 
-.bangkok-reason > h2 {
-  text-align: center;
-  padding-top: 30px;
-  font-size: 23px;
-  letter-spacing: 1.5px;
-  font-weight: bold;
+
+/* ここからレスポンシブデザインやる */
+
+@media(min-width: 1191px) {
+  .fifteenth-section {
+    height: 500px;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/bangkokbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+  }
+  
+  .bangkok-reason {
+    width:calc(100vw - 200px);
+    margin: 0 auto;
+  }
+  
+  .bangkok-reason > h2 {
+    padding-top: 100px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: bold;
+  }
+  
+  .bangkok-reason > p:first-of-type {
+    font-size: 14px;
+    margin:20px 0;
+    letter-spacing: 1.5px;
+  }
+  
+  .bangkok-reasons > li {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  .bangkok-reasons > li:not(:first-child) {
+    margin-top: 10px;
+  }
+  
+  .bangkok-reason > p:last-of-type {
+    margin-top: 25px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+  }
 }
 
-.bangkok-reason > p:first-of-type {
-  font-size: 13px;
-  margin:20px 0 15px 0;
-}
 
-.bangkok-reasons > li {
-  font-size: 13px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
 
-.bangkok-reasons > li:not(:first-child) {
-  margin-top: 10px;
-}
-
-.bangkok-reason > p:last-of-type {
-  margin-top: 20px;
-  font-weight: bold;
-}
 
 /* sixteenth-sectionクラス */
 
