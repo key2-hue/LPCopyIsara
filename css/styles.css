@@ -4515,13 +4515,13 @@
   
   .flows:not(last-of-type) {
     background: #fef5e0;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 130px);
     margin: 0 auto;
   }
   
   .fifth-flow {
     background: #fef5e0;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 130px);
     margin: 0 auto 60px;
   }
   
@@ -4548,7 +4548,7 @@
   .flow-image > img {
     display: block;
     width: calc(100vw - 80px);
-    margin: 0 auto;
+    margin: 0 auto 35px;
   }
 
   .line > img {
@@ -4560,24 +4560,48 @@
   
   .flow-js {
     height: 55px;
+    /* margin-top: 20px; */
+    margin-left: 60px;
+    width: 120px;
   }
+
+  .first-flowSum,
+  .third-flowSum,
+  .fourth-flowSum,
+  .fifth-flowSum{
+    margin-top: 20px;
+  }
+
+  .second-flowSum {
+    margin-top: 50px;
+  }
+
+  .flow-lg::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  
   
   .flow-js > p {
     position: relative;
     top: 15px;
-    left: 20px;
-    font-size: 15px;
+    right: 20px;
+    text-align: center;
+    font-size: 17px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    width: 160px;
     user-select: none;
+    color: #333;
   }
   
   
   
   
   .flow-js > img {
-    height: 35px;
-    width: 40px;
+    height: 105px;
+    width: 105px;
     position: relative;
     top: 10px;
     left: 10px;
@@ -4586,50 +4610,74 @@
   .show {
     display: block;
   }
-  
-  .border {
-    border-bottom: 1px solid #000000;
-    height: 20px;
+
+  .flows {
+    display: flex;
   }
+  
+  
   
   .display-main {
     user-select: none;
   }
   
   .detail {
-    width: calc(100vw - 55px);
+    width: calc(100vw - 400px);
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     color: #333333;
+  }
+
+  .detail-lg::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .detail-lg {
+    display: block;
+    /* margin-top: 10px; */
+  }
+
+  .detailLgMargin {
+    margin-top: -22px;
   }
   
   .detail > p:first-of-type {
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-top: 15px;
     font-weight: bold;
     letter-spacing: 1.5px;
   }
   
   .detail > p:nth-of-type(2) {
-    font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
     letter-spacing: 1.5px;
+  }
+  
+  .second-flowDetail > p:nth-of-type(2) {
+    font-size: 12px;
   }
   
   .first-flowDetail > p:nth-of-type(2),
   .third-flowDetail > p:nth-of-type(2),
   .fourth-flowDetail > p:nth-of-type(2),
   .fifth-flowDetail > p:nth-of-type(2) {
+    font-size: 14px;
     font-weight: bold;
   }
   
-  .detail > p:last-of-type {
+  .first-flowDetail > p:last-of-type,
+  .fourth-flowDetail > p:last-of-type {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   
   .second-flowDetail > p:last-of-type {
+    margin-top: 15px;
+    font-size: 14px;
     font-weight: bold;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -4642,39 +4690,52 @@
   
   .flows:not(last-of-type) {
     background: #fef5e0;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 130px);
     margin: 0 auto;
   }
   
   .fifth-flow {
     background: #fef5e0;
-    width: calc(100vw - 30px);
+    width: calc(100vw - 130px);
     margin: 0 auto 60px;
   }
   
   .flow {
     display: flex;
     text-align: center;
-    width: 120px;
-    margin: 50px auto 30px;
+    width: 150px;
+    margin: 50px auto;
   }
   
   .flow > i {
     position: relative;
-    top: 5px;
+    top: 8px;
+    font-size: 20px;
   }
   
   .flow > p{
-    font-size: 18px;
+    font-size: 23px;
     font-weight: bold;
     color: #333;
     letter-spacing: 1px;
   }
+
+  .flow-image > img {
+    display: block;
+    width: calc(100vw - 80px);
+    margin: 0 auto 35px;
+  }
+
+  .line > img {
+    display: block;
+    width: calc(100vw - 380px);
+    margin: 0 auto;
+  }
   
   
   .flow-js {
-    display: flex;
     height: 55px;
+    margin-left: 60px;
   }
   
   .flow-js > p {
@@ -4687,76 +4748,86 @@
     user-select: none;
   }
   
-  .flow-js > p:hover {
-    border-bottom: 1px solid #000000;
-    cursor: pointer;
-    height: 20px;
-  }
   
   
-  
-  .flow-js:not(first-of-type) {
-    margin-top: 5px;
-  }
   
   .flow-js > img {
-    height: 35px;
-    width: 40px;
+    height: 140px;
+    width: 140px;
     position: relative;
     top: 10px;
     left: 10px;
   } 
   
-  .none {
-    display:none;
-  }
-  
   .show {
     display: block;
   }
-  
-  .border {
-    border-bottom: 1px solid #000000;
-    height: 20px;
+
+  .flows {
+    display: flex;
   }
+  
+  
   
   .display-main {
     user-select: none;
   }
   
   .detail {
-    width: calc(100vw - 55px);
+    width: calc(100vw - 400px);
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     color: #333333;
+  }
+
+  .detail-lg::before {
+    content: "\A";
+    white-space: pre;
+  }
+
+  .detail-lg {
+    display: block;
+    /* margin-top: 10px; */
+  }
+
+  .detailLgMargin {
+    margin-top: -22px;
   }
   
   .detail > p:first-of-type {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 10px;
     font-weight: bold;
     letter-spacing: 1.5px;
   }
   
   .detail > p:nth-of-type(2) {
-    font-size: 12px;
     margin-top: 10px;
     letter-spacing: 1.5px;
+  }
+  
+  .second-flowDetail > p:nth-of-type(2) {
+    font-size: 12px;
   }
   
   .first-flowDetail > p:nth-of-type(2),
   .third-flowDetail > p:nth-of-type(2),
   .fourth-flowDetail > p:nth-of-type(2),
   .fifth-flowDetail > p:nth-of-type(2) {
+    font-size: 14px;
     font-weight: bold;
   }
   
-  .detail > p:last-of-type {
+  .first-flowDetail > p:last-of-type,
+  .fourth-flowDetail > p:last-of-type {
     font-size: 12px;
     margin-top: 10px;
   }
   
   .second-flowDetail > p:last-of-type {
+    margin-top: 10px;
+    font-size: 14px;
     font-weight: bold;
   }
 }
