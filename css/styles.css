@@ -4298,10 +4298,7 @@
   
 
   .from {
-    /* position: relative; 
-    top: 30px; */
     display: inline-block;
-    /* width: 230px; */
   }
 }
 
@@ -4378,134 +4375,390 @@
 
 /* fourteenth-sectionクラス */
 
-.first-flow, 
-.second-flow, 
-.third-flow, 
-.fourth-flow {
-  background: #fef5e0;
-  width: calc(100vw - 30px);
-  margin: 0 auto;
+@media (max-width: 768px) {
+  .fourteenth-section {
+    padding-bottom: 50px;
+  }
+  
+  .flows:not(last-of-type) {
+    background: #fef5e0;
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+  }
+  
+  .fifth-flow {
+    background: #fef5e0;
+    width: calc(100vw - 30px);
+    margin: 0 auto 60px;
+  }
+  
+  .flow {
+    display: flex;
+    text-align: center;
+    width: 120px;
+    margin: 50px auto 30px;
+  }
+  
+  .flow > i {
+    position: relative;
+    top: 5px;
+  }
+  
+  .flow > p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+  }
+
+  .flow-image {
+    display:none;
+  }
+  
+  
+  .flow-js {
+    display: flex;
+    height: 55px;
+  }
+  
+  .flow-js > p {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    user-select: none;
+  }
+  
+  .flow-js > p:hover {
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+    height: 20px;
+  }
+  
+  
+  
+  .flow-js:not(first-of-type) {
+    margin-top: 5px;
+  }
+  
+  .flow-js > img {
+    height: 35px;
+    width: 40px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  } 
+  
+  .none,.line >img {
+    display:none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .border {
+    border-bottom: 1px solid #000000;
+    height: 20px;
+  }
+  
+  .display-main {
+    user-select: none;
+  }
+  
+  .detail {
+    width: calc(100vw - 55px);
+    margin: 0 auto;
+    padding-bottom: 25px;
+    color: #333333;
+  }
+  
+  .detail > p:first-of-type {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  .detail > p:nth-of-type(2) {
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+  }
+  
+  .first-flowDetail > p:nth-of-type(2),
+  .third-flowDetail > p:nth-of-type(2),
+  .fourth-flowDetail > p:nth-of-type(2),
+  .fifth-flowDetail > p:nth-of-type(2) {
+    font-weight: bold;
+  }
+  
+  .detail > p:last-of-type {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .second-flowDetail > p:last-of-type {
+    font-weight: bold;
+  }
 }
 
-.fifth-flow {
-  background: #fef5e0;
-  width: calc(100vw - 30px);
-  margin: 0 auto 60px;
+
+/* ここからレスポンシブデザインやる  */
+
+@media (min-width: 769px) and (max-width: 1190px) {
+  .fourteenth-section {
+    padding-bottom: 50px;
+  }
+  
+  .flows:not(last-of-type) {
+    background: #fef5e0;
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+  }
+  
+  .fifth-flow {
+    background: #fef5e0;
+    width: calc(100vw - 30px);
+    margin: 0 auto 60px;
+  }
+  
+  .flow {
+    display: flex;
+    text-align: center;
+    width: 150px;
+    margin: 50px auto;
+  }
+  
+  .flow > i {
+    position: relative;
+    top: 8px;
+    font-size: 20px;
+  }
+  
+  .flow > p{
+    font-size: 23px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+  }
+
+  .flow-image > img {
+    display: block;
+    width: calc(100vw - 80px);
+    margin: 0 auto;
+  }
+
+  .line > img {
+    display: block;
+    width: calc(100vw - 380px);
+    margin: 0 auto;
+  }
+  
+  
+  .flow-js {
+    height: 55px;
+  }
+  
+  .flow-js > p {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    user-select: none;
+  }
+  
+  
+  
+  
+  .flow-js > img {
+    height: 35px;
+    width: 40px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  } 
+  
+  .show {
+    display: block;
+  }
+  
+  .border {
+    border-bottom: 1px solid #000000;
+    height: 20px;
+  }
+  
+  .display-main {
+    user-select: none;
+  }
+  
+  .detail {
+    width: calc(100vw - 55px);
+    margin: 0 auto;
+    padding-bottom: 25px;
+    color: #333333;
+  }
+  
+  .detail > p:first-of-type {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  .detail > p:nth-of-type(2) {
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+  }
+  
+  .first-flowDetail > p:nth-of-type(2),
+  .third-flowDetail > p:nth-of-type(2),
+  .fourth-flowDetail > p:nth-of-type(2),
+  .fifth-flowDetail > p:nth-of-type(2) {
+    font-weight: bold;
+  }
+  
+  .detail > p:last-of-type {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .second-flowDetail > p:last-of-type {
+    font-weight: bold;
+  }
 }
 
-.flow {
-  height: 100px;
-  line-height: 100px;
-  text-align: center;
-}
 
 
-.first-flowSum,
-.second-flowSum,
-.third-flowSum,
-.fourth-flowSum,
-.fifth-flowSum {
-  display: flex;
-  height: 55px;
-}
-
-.first-flowSum > p,
-.second-flowSum > p,
-.third-flowSum > p,
-.fourth-flowSum > p,
-.fifth-flowSum > p {
-  position: relative;
-  top: 15px;
-  left: 20px;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  user-select: none;
-}
-
-.first-flowSum > p:hover,
-.second-flowSum > p:hover,
-.third-flowSum > p:hover,
-.fourth-flowSum > p:hover,
-.fifth-flowSum > p:hover {
-  border-bottom: 1px solid #000000;
-  cursor: pointer;
-  height: 20px;
-}
-
-
-
-.second-flowSum,
-.third-flowSum,
-.fourth-flowSum,
-.fifth-flowSum {
-  margin-top: 5px;
-}
-
-.first-flowSum > img,
-.second-flowSum > img,
-.third-flowSum > img,
-.fourth-flowSum > img,
-.fifth-flowSum > img {
-  height: 35px;
-  width: 40px;
-  position: relative;
-  top: 10px;
-  left: 10px;
-  /* width: 50px; */
-} 
-
-.none {
-  display:none;
-}
-
-.show {
-  display: block;
-}
-
-.border {
-  border-bottom: 1px solid #000000;
-  height: 20px;
-}
-
-.display-main {
-  user-select: none;
-}
-
-.detail {
-  width: calc(100vw - 55px);
-  margin: 0 auto;
-  padding-bottom: 25px;
-  color: #333333;
-}
-
-.detail > p:first-of-type {
-  font-size: 12px;
-  margin-top: 10px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
-
-.detail > p:nth-of-type(2) {
-  font-size: 12px;
-  margin-top: 10px;
-  letter-spacing: 1.5px;
-}
-
-.first-flowDetail > p:nth-of-type(2),
-.third-flowDetail > p:nth-of-type(2),
-.fourth-flowDetail > p:nth-of-type(2),
-.fifth-flowDetail > p:nth-of-type(2) {
-  font-weight: bold;
-}
-
-.detail > p:last-of-type {
-  font-size: 12px;
-  margin-top: 10px;
-}
-
-.second-flowDetail > p:last-of-type {
-  font-weight: bold;
+@media (min-width: 1191px) {
+  .fourteenth-section {
+    padding-bottom: 50px;
+  }
+  
+  .flows:not(last-of-type) {
+    background: #fef5e0;
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+  }
+  
+  .fifth-flow {
+    background: #fef5e0;
+    width: calc(100vw - 30px);
+    margin: 0 auto 60px;
+  }
+  
+  .flow {
+    display: flex;
+    text-align: center;
+    width: 120px;
+    margin: 50px auto 30px;
+  }
+  
+  .flow > i {
+    position: relative;
+    top: 5px;
+  }
+  
+  .flow > p{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 1px;
+  }
+  
+  
+  .flow-js {
+    display: flex;
+    height: 55px;
+  }
+  
+  .flow-js > p {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    user-select: none;
+  }
+  
+  .flow-js > p:hover {
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+    height: 20px;
+  }
+  
+  
+  
+  .flow-js:not(first-of-type) {
+    margin-top: 5px;
+  }
+  
+  .flow-js > img {
+    height: 35px;
+    width: 40px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  } 
+  
+  .none {
+    display:none;
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .border {
+    border-bottom: 1px solid #000000;
+    height: 20px;
+  }
+  
+  .display-main {
+    user-select: none;
+  }
+  
+  .detail {
+    width: calc(100vw - 55px);
+    margin: 0 auto;
+    padding-bottom: 25px;
+    color: #333333;
+  }
+  
+  .detail > p:first-of-type {
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  .detail > p:nth-of-type(2) {
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1.5px;
+  }
+  
+  .first-flowDetail > p:nth-of-type(2),
+  .third-flowDetail > p:nth-of-type(2),
+  .fourth-flowDetail > p:nth-of-type(2),
+  .fifth-flowDetail > p:nth-of-type(2) {
+    font-weight: bold;
+  }
+  
+  .detail > p:last-of-type {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  
+  .second-flowDetail > p:last-of-type {
+    font-weight: bold;
+  }
 }
 
 /* fifteenth-sectionクラス */
