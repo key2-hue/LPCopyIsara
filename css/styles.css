@@ -6316,76 +6316,276 @@
 
 /* nineteenth-sectionクラス */
 
-.nineteenth-section {
-  background: #f7c23c;
+@media(max-width: 768px) {
+  .nineteenth-section {
+    background: #ebb94d;
+  }
+  
+  .document-form {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .document-flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .document-flex > p:first-of-type {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .document-flex > i {
+    position: relative;
+    top: 3px;
+    right: 2px;
+    font-size: 19px;
+  }
+  
+  .document-form > p:last-of-type {
+    font-size: 13px;
+    margin: 25px 0;
+  }
+  
+  .form {
+    padding-bottom: 40px;
+  }
+  
+  .form > input,
+  .form > textarea {
+    display: block;
+    width: calc(100vw - 20px);
+    margin: 0 auto;
+    border: 0;
+  }
+  
+  /* .form > input:not(:first-of-type), */
+  .form > input:not(:last-of-type) {
+    margin-top: 25px;
+  }
+  
+  .form > textarea,
+  .form > input:last-of-type {
+    margin-top: 40px;
+  }
+  
+  .form > input:last-of-type {
+    background: #da6b64;
+    color: white;
+    letter-spacing: 20px;
+    font-size: 25px;
+    border-radius: 30px 30px;
+  }
+  
+  .form > input:not(:last-child),
+  .form > textarea {
+    border-radius: 6px;
+  }
+  
+  .form > input {
+    height: 60px;
+  }
+  
+  .form > input:not(:last-of-type)::placeholder,
+  .form > textarea::placeholder {
+    position: relative;
+    left: 10px;
+    font-size: 13px;
+  }
+  
+  .form > textarea::placeholder {
+    top: 10px;
+    font-size: 14px;
+  }
 }
 
-.document-form {
-  text-align: center;
-  padding-top: 40px;
+
+@media(min-width: 769px) and (max-width:1190px) {
+  .nineteenth-section {
+    background: #ebb94d;
+    padding-bottom: 30px;
+  }
+  
+  .document-form {
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .document-flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .document-flex > p:first-of-type {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .document-flex > i {
+    position: relative;
+    top: 6px;
+    right: 4px;
+    font-size: 23px;
+    color: #333;
+  }
+  
+  .document-form > p:last-of-type {
+    font-size: 15px;
+    margin: 20px 0 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #333;
+  }
+  
+  .form {
+    padding-bottom: 40px;
+  }
+  
+  .form > input,
+  .form > textarea {
+    display: block;
+    width: calc(100vw - 220px);
+    margin: 0 auto;
+    border: 0;
+  }
+  
+  /* .form > input:not(:first-of-type), */
+  .form > input:not(:last-of-type) {
+    margin-top: 25px;
+  }
+  
+  .form > textarea,
+  .form > input:last-of-type {
+    margin-top: 40px;
+  }
+  
+  .form > input:last-of-type {
+    background: #da6b64;
+    color: white;
+    letter-spacing: 20px;
+    font-size: 25px;
+    border-radius: 30px 30px;
+  }
+  
+  .form > input:not(:last-child),
+  .form > textarea {
+    border-radius: 6px;
+  }
+  
+  .form > input {
+    height: 60px;
+  }
+  
+  .form > input:not(:last-of-type)::placeholder,
+  .form > textarea::placeholder {
+    position: relative;
+    left: 10px;
+    font-size: 13px;
+  }
+  
+  .form > textarea::placeholder {
+    top: 10px;
+    font-size: 14px;
+  }
 }
 
-.document-form > p:first-of-type {
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: bold;
+
+@media(min-width: 1191px) {
+  .nineteenth-section {
+    background: #ebb94d;
+    padding-bottom: 30px;
+  }
+  
+  .document-form {
+    text-align: center;
+    padding-top: 60px;
+  }
+
+  .document-flex {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .document-flex > p:first-of-type {
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .document-flex > i {
+    position: relative;
+    top: 6px;
+    right: 4px;
+    font-size: 27px;
+    color: #333;
+  }
+  
+  .document-form > p:last-of-type {
+    font-size: 16px;
+    margin: 20px 0 30px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #333;
+  }
+  
+  .form {
+    padding-bottom: 40px;
+  }
+  
+  .form > input,
+  .form > textarea {
+    display: block;
+    width: calc(100vw - 500px);
+    margin: 0 auto;
+    border: 0;
+  }
+  
+  /* .form > input:not(:first-of-type), */
+  .form > input:not(:last-of-type) {
+    margin-top: 25px;
+  }
+  
+  .form > textarea,
+  .form > input:last-of-type {
+    margin-top: 40px;
+  }
+  
+  .form > input:last-of-type {
+    background: #da6b64;
+    color: white;
+    letter-spacing: 20px;
+    font-size: 25px;
+    border-radius: 30px 30px;
+  }
+  
+  .form > input:not(:last-child),
+  .form > textarea {
+    border-radius: 6px;
+  }
+  
+  .form > input {
+    height: 60px;
+  }
+  
+  .form > input:not(:last-of-type)::placeholder,
+  .form > textarea::placeholder {
+    position: relative;
+    left: 10px;
+    font-size: 13px;
+  }
+  
+  .form > textarea::placeholder {
+    top: 10px;
+    font-size: 14px;
+  }
 }
 
-.document-form > p:last-of-type {
-  font-size: 13px;
-  margin: 25px 0;
-}
 
-.form {
-  padding-bottom: 40px;
-}
-
-.form > input,
-.form > textarea {
-  display: block;
-  width: calc(100vw - 20px);
-  margin: 0 auto;
-  border: 0;
-}
-
-/* .form > input:not(:first-of-type), */
-.form > input:not(:last-of-type) {
-  margin-top: 25px;
-}
-
-.form > textarea,
-.form > input:last-of-type {
-  margin-top: 40px;
-}
-
-.form > input:last-of-type {
-  background: #da6b64;
-  color: white;
-  letter-spacing: 20px;
-  font-size: 25px;
-  border-radius: 30px 30px;
-}
-
-.form > input:not(:last-child),
-.form > textarea {
-  border-radius: 6px;
-}
-
-.form > input {
-  height: 60px;
-}
-
-.form > input:not(:last-of-type)::placeholder,
-.form > textarea::placeholder {
-  position: relative;
-  left: 10px;
-  font-size: 13px;
-}
-
-.form > textarea::placeholder {
-  top: 10px;
-  font-size: 14px;
-}
 
 /* twentieth-sectionクラス width大きめのやつ */
 
