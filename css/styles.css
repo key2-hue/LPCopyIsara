@@ -5650,71 +5650,312 @@
 
 /* seventeenth-sectionクラス */
 
-.seventeenth-section {
-  height: 500px;
-  background-image: url("https://isara.life/wp-content/themes/isara_v2/img/specialdetailsp.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+@media(max-width: 768px) {
+  .seventeenth-section {
+    height: 500px;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/specialdetailsp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .isara-value  {
+    text-align: center;
+    color: #fff;
+    position: relative;
+    right: 10px;
+  }
+
+  .value-sm::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .isara-value > h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .isara-value > h2:first-of-type {
+    /* padding-top: 40px; */
+    position: relative;
+    top: 40px;
+    letter-spacing: 1px;
+  }
+  
+  .isara-value > h2:last-of-type {
+    letter-spacing: 2.5px;
+    position: relative;
+    bottom: 10px;
+    line-height: 2;
+  }
+  
+  .isara-value > p:first-of-type,
+  .isara-value > p:last-of-type {
+    font-size: 13px;
+  }
+  
+  .isara-value > p:first-of-type {
+    position: relative;
+    top: 60px;
+  }
+  
+  .isara-value > p:nth-of-type(2) {
+    text-align:left;
+    font-size: 60px;
+    position: relative;
+    top: 40px;
+  }
+  
+  .isara-value > p:nth-of-type(3) {
+    text-align: right;
+    font-size: 60px;
+    position: relative;
+    bottom: 50px;
+    left: 10px;
+  }
+  
+  .isara-value > p:last-of-type {
+    position: relative;
+    bottom: 20px;
+  }
 }
 
-.isara-value  {
-  text-align: center;
-  color: #fff;
-  position: relative;
-  right: 10px;
-  /* width: calc(100vw - 10px); */
-  /* margin: 0 auto; */
+
+
+@media(min-width: 769px) and (max-width: 1000px) {
+  .seventeenth-section {
+    height: 480px;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/specialdetail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .isara-value  {
+    text-align: center;
+    color: #fff;
+    /* position: relative;
+    right: 10px; */
+    padding-top: 20px;
+    width: calc(100vw - 60px);
+    margin: 0 auto; 
+  }
+
+  .value-lg::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .isara-value > h2 {
+    font-weight: bold;
+  }
+  
+  .isara-value > h2:first-of-type {
+    font-size: 24px;
+    /* padding-top: 40px; */
+    position: relative;
+    top: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .isara-value > h2:last-of-type {
+    font-size: 23px;
+    letter-spacing: 2.5px;
+    position: relative;
+    top: 10px;
+    line-height: 2;
+  }
+  
+  .isara-value > p:first-of-type,
+  .isara-value > p:last-of-type {
+    font-size: 17px;
+  }
+  
+  .isara-value > p:first-of-type {
+    position: relative;
+    top: 60px;
+  }
+  
+  .isara-value > p:nth-of-type(2) {
+    text-align:left;
+    font-size: 60px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+  }
+  
+  .isara-value > p:nth-of-type(3) {
+    text-align: right;
+    font-size: 60px;
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+  }
+  
+  .isara-value > p:last-of-type {
+    position: relative;
+    bottom: 40px;
+  }
 }
 
-.isara-value > h2 {
-  font-size: 18px;
-  font-weight: bold;
+
+
+@media(min-width: 1001px) and (max-width: 1190px) {
+  .seventeenth-section {
+    height: 480px;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/specialdetail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .isara-value  {
+    text-align: center;
+    color: #fff;
+    /* position: relative;
+    right: 10px; */
+    padding-top: 20px;
+    width: 1000px;
+    margin: 0 auto; 
+  }
+
+  .value-lg::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .isara-value > h2 {
+    font-weight: bold;
+  }
+  
+  .isara-value > h2:first-of-type {
+    font-size: 24px;
+    /* padding-top: 40px; */
+    position: relative;
+    top: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .isara-value > h2:last-of-type {
+    font-size: 23px;
+    letter-spacing: 2.5px;
+    position: relative;
+    top: 10px;
+    line-height: 2;
+  }
+  
+  .isara-value > p:first-of-type,
+  .isara-value > p:last-of-type {
+    font-size: 17px;
+  }
+  
+  .isara-value > p:first-of-type {
+    position: relative;
+    top: 60px;
+  }
+  
+  .isara-value > p:nth-of-type(2) {
+    text-align:left;
+    font-size: 60px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+  }
+  
+  .isara-value > p:nth-of-type(3) {
+    text-align: right;
+    font-size: 60px;
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+  }
+  
+  .isara-value > p:last-of-type {
+    position: relative;
+    bottom: 40px;
+  }
 }
 
-.isara-value > h2:first-of-type {
-  /* padding-top: 40px; */
-  position: relative;
-  top: 40px;
-  letter-spacing: 1px;
+
+
+@media(min-width: 1191px) {
+  .seventeenth-section {
+    height: 520px;
+    background-image: url("https://isara.life/wp-content/themes/isara_v2/img/specialdetail.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .isara-value  {
+    text-align: center;
+    color: #fff;
+    /* position: relative;
+    right: 10px; */
+    padding-top: 20px;
+    width: 1000px;
+    margin: 0 auto; 
+  }
+
+  .value-lg::before {
+    content: "\A";
+    white-space: pre;
+  }
+  
+  .isara-value > h2 {
+    font-weight: bold;
+  }
+  
+  .isara-value > h2:first-of-type {
+    font-size: 27px;
+    /* padding-top: 40px; */
+    position: relative;
+    top: 40px;
+    letter-spacing: 2px;
+  }
+  
+  .isara-value > h2:last-of-type {
+    font-size: 27px;
+    letter-spacing: 2.5px;
+    position: relative;
+    top: 10px;
+    line-height: 2;
+  }
+  
+  .isara-value > p:first-of-type,
+  .isara-value > p:last-of-type {
+    font-size: 21px;
+  }
+  
+  .isara-value > p:first-of-type {
+    position: relative;
+    top: 60px;
+  }
+  
+  .isara-value > p:nth-of-type(2) {
+    text-align:left;
+    font-size: 60px;
+    position: relative;
+    top: 70px;
+    left: 20px;
+  }
+  
+  .isara-value > p:nth-of-type(3) {
+    text-align: right;
+    font-size: 60px;
+    position: relative;
+    bottom: 50px;
+    right: 30px;
+  }
+  
+  .isara-value > p:last-of-type {
+    position: relative;
+    bottom: 40px;
+  }
 }
 
-.isara-value > h2:last-of-type {
-  letter-spacing: 2.5px;
-  position: relative;
-  bottom: 10px;
-  line-height: 2;
-}
 
-.isara-value > p:first-of-type,
-.isara-value > p:last-of-type {
-  font-size: 13px;
-}
-
-.isara-value > p:first-of-type {
-  position: relative;
-  top: 60px;
-}
-
-.isara-value > p:nth-of-type(2) {
-  text-align:left;
-  font-size: 60px;
-  position: relative;
-  top: 40px;
-}
-
-.isara-value > p:nth-of-type(3) {
-  text-align: right;
-  font-size: 60px;
-  position: relative;
-  bottom: 50px;
-  left: 10px;
-}
-
-.isara-value > p:last-of-type {
-  position: relative;
-  bottom: 20px;
-}
 
 /* eighteenth-sectionクラス */
 
