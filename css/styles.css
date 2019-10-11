@@ -6113,16 +6113,20 @@
 
   .message-flex {
     display: flex;
+    width: calc(100vw - 50px);
+    margin: 0 auto;
   }
   
   .message-first > img {
     display: block;
-    width: calc(100vw - 700px);
-    margin: 60px auto 0;
+    width: calc(100vw * 0.22);
+    /* margin: 60px auto 0; */
+    margin-top: 40px;
   }
 
   .message-second {
     width: calc(100vw - 300px);
+    margin-left: 50px;
   }
 
   
@@ -6157,7 +6161,7 @@
 
 @media(min-width: 1101px) and (max-width: 1190px) {
   .message {
-    width: calc(100vw - 30px);
+    width: calc(100vw - 50px);
     margin: 0 auto;
   }
 
@@ -6172,50 +6176,66 @@
   
   
   .message > h2 {
-    padding-top: 40px;
-    font-size: 18px;
+    padding-top: 65px;
+    font-size: 24px;
+    color: #333;
   }
   
   .message > p:first-of-type {
     margin: 40px 0 20px 0;
+    color: #333;
+  }
+
+  .message-flex {
+    display: flex;
+    width: 1050px;
+    margin: 0 auto;
   }
   
-  .message > img {
+  .message-first > img {
     display: block;
-    width: calc(100vw - 30px);
+    width: 242px;
+    /* margin: 60px auto 0; */
+    margin-top: 40px;
   }
+
+  .message-second {
+    width: 800px;
+    margin-left: 50px;
+  }
+
   
-  .message > p:not(:first-of-type),
-  .message > ul {
+  .message-second > p,
+  .message-second > ul {
     font-size: 14.5px;
     letter-spacing: 1px;
   }
   
-  .message > p:nth-of-type(2) {
-    margin-top: 10px;
+  .message-second > p:first-of-type {
+    margin-top: 40px;
   }
   
-  .message > p:nth-of-type(3) {
+  .message-second > p:nth-of-type(2) {
     margin-top: 15px;
   }
   
-  .message > ul {
+  .message-second > ul {
     margin: 30px 0;
   }
   
-  .message > p:last-of-type {
+  .message-second > p:last-of-type {
     margin-top: 10px;
   }
   
   .message {
-    padding-bottom: 40px;
+    padding-bottom: 110px;
   }
 }
 
 
 @media(min-width: 1191px) {
   .message {
-    width: calc(100vw - 30px);
+    width: calc(100vw - 50px);
     margin: 0 auto;
   }
 
@@ -6230,43 +6250,61 @@
   
   
   .message > h2 {
-    padding-top: 40px;
-    font-size: 18px;
+    padding-top: 65px;
+    font-size: 27px;
+    color: #333;
+    letter-spacing: 2px;
   }
   
   .message > p:first-of-type {
-    margin: 40px 0 20px 0;
+    margin: 40px 0 0 0;
+    color: #333;
+    font-size: 21px;
+  }
+
+  .message-flex {
+    display: flex;
+    width: 850px;
+    margin: 0 auto;
   }
   
-  .message > img {
+  .message-first > img {
     display: block;
-    width: calc(100vw - 30px);
+    width: 190px;
+    /* margin: 60px auto 0; */
+    margin-top: 40px;
   }
+
+  .message-second {
+    width: 630px;
+    margin-left: 30px;
+  }
+
   
-  .message > p:not(:first-of-type),
-  .message > ul {
+  .message-second > p,
+  .message-second > ul {
     font-size: 14.5px;
     letter-spacing: 1px;
   }
   
-  .message > p:nth-of-type(2) {
-    margin-top: 10px;
+  .message-second > p:first-of-type {
+    margin-top: 40px;
   }
   
-  .message > p:nth-of-type(3) {
+  .message-second > p:nth-of-type(2) {
     margin-top: 15px;
   }
   
-  .message > ul {
+  .message-second > ul {
     margin: 30px 0;
   }
   
-  .message > p:last-of-type {
+  .message-second > p:last-of-type {
     margin-top: 10px;
   }
   
   .message {
-    padding-bottom: 40px;
+    padding-bottom: 110px;
   }
 }
 
