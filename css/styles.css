@@ -5134,7 +5134,6 @@
 }
 
 
-/* ここからレスポンシブデザインやる */
 
 @media(min-width: 1191px) {
   .fifteenth-section {
@@ -5187,94 +5186,347 @@
 
 /* sixteenth-sectionクラス */
 
-.sixteenth-section {
-  background: #f7c23c;
-  height: 550px;
+@media(max-width: 768px) {
+  .sixteenth-section {
+    background: #f7c23c;
+    height: 550px;
+  }
+  
+  .privilege {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .privilege > h2 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege > p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  
+  .privilege-span {
+    color: white;
+  }
+  
+  .more-privilege > h2 {
+    position: relative; 
+    top: 40px;
+    background: #f7c23c;
+    width: 260px;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .privilege-detail {
+    border: 2px solid #fff;
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    padding: 50px 0 50px;
+  }
+  
+  .privilege-detail > li {
+    display: flex;
+    padding-left: 100px;
+    width: calc(100vw - 140px);
+  }
+  
+  .privilege-detail > li:not(:first-child) {
+    margin-top: 15px;
+  }
+  
+  .privilege-merit > p:first-child {
+    color: #f7c23c;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege-merit > p:nth-of-type(2) {
+    color: white;
+    position: relative; 
+    top: 10px;
+    font-size: 12px;
+    padding-left: 70px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    width:calc(100vw - 280px);
+  }
 }
 
-.privilege {
-  text-align: center;
-  padding-top: 30px;
+
+
+@media(min-width: 769px) and (max-width: 991px) {
+  .sixteenth-section {
+    background: #f7c23c;
+    height: 1250px;
+  }
+  
+  .privilege {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .privilege > h2 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege > p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  
+  .privilege-span {
+    color: white;
+  }
+  
+  .more-privilege > h2 {
+    position: relative; 
+    top: 40px;
+    background: #f7c23c;
+    width: 260px;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .privilege-detail {
+    border: 2px solid #fff;
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    padding: 50px 0 50px;
+  }
+  
+  .privilege-detail > li {
+    padding-left: 100px;
+    width: calc(100vw - 140px);
+  }
+  
+  .privilege-detail > li:not(:first-child) {
+    margin-top: 15px;
+  }
+  
+  .privilege-merit > p:first-child {
+    color: #f7c23c;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege-merit > p:nth-of-type(2) {
+    color: white;
+    position: relative; 
+    top: 10px;
+    font-size: 12px;
+    /* padding-left: 70px; */
+    padding-right: 10px;
+    letter-spacing: 1px;
+    width:calc(100vw - 280px);
+  }
 }
 
-.privilege > h2 {
-  font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
+
+
+@media(min-width: 992px) and (max-width: 1190px) {
+  .sixteenth-section {
+    background: #f7c23c;
+    height: 550px;
+  }
+  
+  .privilege {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .privilege > h2 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege > p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  
+  .privilege-span {
+    color: white;
+  }
+  
+  .more-privilege > h2 {
+    position: relative; 
+    top: 40px;
+    background: #f7c23c;
+    width: 260px;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .privilege-detail {
+    border: 2px solid #fff;
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    padding: 50px 0 50px;
+  }
+  
+  .privilege-detail > li {
+    display: flex;
+    padding-left: 100px;
+    width: calc(100vw - 140px);
+  }
+  
+  .privilege-detail > li:not(:first-child) {
+    margin-top: 15px;
+  }
+  
+  .privilege-merit > p:first-child {
+    color: #f7c23c;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege-merit > p:last-child {
+    color: white;
+    position: relative; 
+    top: 10px;
+    font-size: 12px;
+    padding-left: 70px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    width:calc(100vw - 280px);
+  }
 }
 
-.privilege > p {
-  font-size: 13px;
-  letter-spacing: 1px;
-  margin-top: 20px;
+
+@media(min-width: 1191px) {
+  .sixteenth-section {
+    background: #f7c23c;
+    height: 550px;
+  }
+  
+  .privilege {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .privilege > h2 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege > p {
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+  }
+  
+  .privilege-span {
+    color: white;
+  }
+  
+  .more-privilege > h2 {
+    position: relative; 
+    top: 40px;
+    background: #f7c23c;
+    width: 260px;
+    height: 70px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .privilege-detail {
+    border: 2px solid #fff;
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    padding: 50px 0 50px;
+  }
+  
+  .privilege-detail > li {
+    display: flex;
+    padding-left: 100px;
+    width: calc(100vw - 140px);
+  }
+  
+  .privilege-detail > li:not(:first-child) {
+    margin-top: 15px;
+  }
+  
+  .privilege-merit > p:first-child {
+    color: #f7c23c;
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .privilege-merit > p:last-child {
+    color: white;
+    position: relative; 
+    top: 10px;
+    font-size: 12px;
+    padding-left: 70px;
+    padding-right: 10px;
+    letter-spacing: 1px;
+    width:calc(100vw - 280px);
+  }
 }
 
-.privilege-span {
-  color: white;
-}
 
-.more-privilege > h2 {
-  position: relative; 
-  top: 40px;
-  background: #f7c23c;
-  width: 260px;
-  height: 70px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  font-size: 19px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-.privilege-detail {
-  border: 2px solid #fff;
-  width: calc(100vw - 40px);
-  margin: 0 auto;
-  padding: 50px 0 50px;
-}
-
-.privilege-detail > li {
-  display: flex;
-  /* position: relative;
-  left: 40px; */
-  padding-left: 100px;
-  width: calc(100vw - 140px);
-}
-
-.privilege-detail > li:not(:first-child) {
-  margin-top: 15px;
-}
-
-.privilege-one > p:first-child,
-.privilege-two > p:first-child,
-.privilege-three > p:first-child {
-  color: #f7c23c;
-  background: #fff;
-  height: 60px;
-  width: 60px;
-  border-radius: 50%;
-  line-height: 60px;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-.privilege-one > p:last-child,
-.privilege-two > p:last-child,
-.privilege-three > p:last-child {
-  color: white;
-  /* line-height: 40px; */
-  position: relative; 
-  top: 10px;
-  font-size: 12px;
-  padding-left: 70px;
-  padding-right: 10px;
-  letter-spacing: 1px;
-  width:calc(100vw - 280px);
-}
 
 /* seventeenth-sectionクラス */
 
