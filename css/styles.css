@@ -1,6 +1,6 @@
 * {
   user-select: none;
-  /* overflow-x: hidden; */
+  /* overflow: hidden; */
 }
 
 /* small max-width: 768px
@@ -5196,8 +5196,19 @@
     text-align: center;
     padding-top: 30px;
   }
+
+  .privilege-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .privilege-flex > i {
+    position: relative;
+    top: 4px;
+    right: 2px;
+  }
   
-  .privilege > h2 {
+  .privilege-flex > h2 {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 1px;
@@ -5207,6 +5218,11 @@
     font-size: 13px;
     letter-spacing: 1px;
     margin-top: 20px;
+  }
+
+  .privilege-br::before {
+    content: "\A";
+    white-space: pre;
   }
   
   .privilege-span {
@@ -5268,6 +5284,10 @@
     letter-spacing: 1px;
     width:calc(100vw - 280px);
   }
+
+  .privilege-merit > p:last-of-type {
+    display: none;
+  }
 }
 
 
@@ -5280,78 +5300,106 @@
   
   .privilege {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 60px;
+  }
+
+  .privilege-flex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .privilege-flex > i {
+    position: relative;
+    top: 6px;
+    right: 2px;
+    font-size: 21px;
+    color: #333;
   }
   
-  .privilege > h2 {
-    font-size: 18px;
+  .privilege-flex > h2 {
+    font-size: 23px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    color: #333;
   }
   
   .privilege > p {
-    font-size: 13px;
+    font-size: 14.5px;
     letter-spacing: 1px;
-    margin-top: 20px;
+    width: calc(100vw - 80px);
+    margin: 40px auto 0;
   }
   
   .privilege-span {
     color: white;
+  }
+
+  .more-privilege {
+    margin-top: 40px;
   }
   
   .more-privilege > h2 {
     position: relative; 
     top: 40px;
     background: #f7c23c;
-    width: 260px;
+    width: 380px;
     height: 70px;
     left: 0;
     right: 0;
     margin: auto;
     text-align: center;
-    font-size: 19px;
+    font-size: 23px;
     letter-spacing: 1px;
     font-weight: bold;
+    color: #333;
   }
   
   .privilege-detail {
+    height: 810px;
     border: 2px solid #fff;
-    width: calc(100vw - 40px);
+    width: calc(100vw - 80px);
     margin: 0 auto;
     padding: 50px 0 50px;
   }
   
   .privilege-detail > li {
-    padding-left: 100px;
-    width: calc(100vw - 140px);
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 20px auto 0;
+    background: #fff;
+    text-align: center;
   }
   
   .privilege-detail > li:not(:first-child) {
-    margin-top: 15px;
+    margin-top: 20px;
+  }
+
+  .privilege-merit > p {
+    position: relative;
+    top: 40px;
   }
   
   .privilege-merit > p:first-child {
     color: #f7c23c;
-    background: #fff;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
     line-height: 60px;
     text-align: center;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 24px;
     letter-spacing: 1px;
   }
-  
+
   .privilege-merit > p:nth-of-type(2) {
-    color: white;
+    display: none;
+  }
+  
+  .privilege-merit > p:last-of-type {
+    color: #333;
     position: relative; 
-    top: 10px;
-    font-size: 12px;
-    /* padding-left: 70px; */
-    padding-right: 10px;
+    font-size: 14px;
     letter-spacing: 1px;
-    width:calc(100vw - 280px);
+    width: 210px;
+    margin: 0 auto;
+    font-weight: bold;
   }
 }
 
