@@ -58,6 +58,13 @@
     position: relative;
     font-size: 12px;
     letter-spacing: 1px;
+    width: 55px;
+    margin: 0 auto;
+  }
+
+  .document-demand:hover {
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
   }
  }
 
@@ -129,6 +136,11 @@
     font-size: 11px;
     letter-spacing: 1px;
     content: "お問い合わせ / 資料請求はこちら";
+  }
+
+  .document:hover {
+    background: rgb(240, 58, 58);
+    cursor: pointer;
   }
  }
 
@@ -206,6 +218,11 @@
     font-size: 14px;
     letter-spacing: 1px;
     content: "お問い合わせ / 資料請求はこちら";
+  }
+
+  .document:hover {
+    background: rgb(240, 58, 58);
+    cursor: pointer;
   }
  }
 
@@ -2742,7 +2759,7 @@
   
   .caution-first {
     background: #fff;
-    width: 1200px;
+    width: 1150px;
     margin: 40px auto 15px;
     border: 2px solid #ebb94d;
     border-radius: 5px;
