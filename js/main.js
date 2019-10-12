@@ -55,9 +55,15 @@ $(function(){
 
   });
 
-  if($('body')[0].scrollHeight < 100) {
-    $('.footer-four > p').css({'display': 'none'});
-  }
+  $(window).scroll(function(){
+    if($(window).scrollTop() < 95){
+      $('.footer-four > p').fadeOut();
+    } else {
+      $('.footer-four > p').fadeIn();
+    }
+  });
+  
+  
 
   $('.footer-four > p').on('click', function(){
     $("html,body").animate({scrollTop: 0 });
