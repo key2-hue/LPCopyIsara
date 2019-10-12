@@ -6589,91 +6589,251 @@
 
 /* twentieth-sectionクラス width大きめのやつ */
 
-.twentieth-section {
-  padding-bottom: 40px;
+/* ここからレスポンシブデザイン始める */
+
+@media(max-width: 768px) {
+  .twentieth-section {
+    padding-bottom: 40px;
+  }
+  
+  .questions {
+    padding-top: 50px;
+    width: 140px;
+    margin: 0 auto 30px;
+    display: flex;
+  }
+  
+  .questions > i {
+    font-size: 18px;
+    position: relative;
+    top: 4px;
+    color: #333;
+  }
+  
+  .questions > p {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #333;
+  }
+  
+  
+  .quest > div:first-child {
+    border: 1px solid #ddd;
+    display: flex;
+    width: calc(100vw - 40px);
+    margin: 0 auto;
+    height: 35px;
+    line-height: 35px;
+  }
+  
+  .title > i,
+  .title > p:first-of-type {
+    position: relative; 
+    left: 10px;
+    letter-spacing: 1px;
+  }
+
+  .title > p:first-of-type {
+    font-size: 15px;
+  }
+  
+  .title > i {
+    display: inline-block;
+    top: 10px;
+    color: #016ea9;
+    font-size: 14px;
+  }
+  
+  .title > p:first-of-type {
+    font-weight: bold;
+  }
+  
+  .quest:not(:first-of-type) > div:first-child {
+    margin-top: 5px;
+  }
+  
+  .answer {
+    width:calc(100vw - 70px);
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+  }
+  
+  .answer > p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  
+  .none-answer {
+    display: none;
+  }
+  
+  
+  .question-fifteenthAnswer {
+    padding-bottom: 50px;
+  }
 }
 
-.questions {
-  padding-top: 60px;
-  width: 170px;
-  margin: 0 auto 30px;
-  display: flex;
+
+@media(min-width: 769px) and (max-width: 1190px) {
+  .twentieth-section {
+    padding-bottom: 40px;
+  }
+  
+  .questions {
+    padding-top: 60px;
+    width: 170px;
+    margin: 0 auto 30px;
+    display: flex;
+  }
+  
+  .questions > i {
+    font-size: 26px;
+  }
+  
+  .questions > p {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  
+  .quest > div:first-child {
+    border: 1px solid #ddd;
+    display: flex;
+    width: calc(100vw - 120px);
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  .title > i,
+  .title > p:first-of-type {
+    position: relative; 
+    left: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .title > i {
+    display: inline-block;
+    top: 22px;
+    color: #016ea9;
+  }
+  
+  .title > p:first-of-type {
+    font-weight: bold;
+  }
+  
+  .quest:not(:first-of-type) > div:first-child {
+    margin-top: 5px;
+  }
+  
+  .answer {
+    width:calc(100vw - 170px);
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+  }
+  
+  .answer > p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+  
+  .none-answer {
+    display: none;
+  }
+  
+  
+  .question-fifteenthAnswer {
+    padding-bottom: 50px;
+  }
 }
 
-.questions > i {
-  font-size: 26px;
+
+@media(min-width: 1191px) {
+  .twentieth-section {
+    padding-bottom: 40px;
+  }
+  
+  .questions {
+    padding-top: 60px;
+    width: 210px;
+    margin: 0 auto 30px;
+    display: flex;
+  }
+  
+  .questions > i {
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+  }
+  
+  .questions > p {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+  }
+  
+  
+  .quest > div:first-child {
+    border: 1px solid #ddd;
+    display: flex;
+    width: calc(100vw - 280px);
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+  }
+  
+  .title > i,
+  .title > p:first-of-type {
+    position: relative; 
+    left: 20px;
+    letter-spacing: 1px;
+  }
+
+  
+  .title > i {
+    display: inline-block;
+    top: 20px;
+    color: #016ea9;
+    font-size: 19px;
+  }
+  
+  .title > p:first-of-type {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+  }
+  
+  .quest:not(:first-of-type) > div:first-child {
+    margin-top: 5px;
+  }
+  
+  .answer {
+    width:calc(100vw - 330px);
+    margin: 0 auto;
+    padding: 20px 0 30px 0;
+  }
+  
+  .answer > p {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  
+  .none-answer {
+    display: none;
+  }
+  
+  
+  .question-fifteenthAnswer {
+    padding-bottom: 50px;
+  }
 }
 
-.questions > p {
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
 
-
-.quest > div:first-child {
-  border: 1px solid #ddd;
-  display: flex;
-  width: calc(100vw - 120px);
-  margin: 0 auto;
-  height: 60px;
-  line-height: 60px;
-}
-
-.title > i,
-.title > p:first-of-type {
-  position: relative; 
-  left: 30px;
-  letter-spacing: 1px;
-}
-
-.title > i {
-  display: inline-block;
-  top: 22px;
-  color: #016ea9;
-}
-
-.title > p:first-of-type {
-  font-weight: bold;
-}
-
-.quest:not(:first-of-type) > div:first-child {
-  margin-top: 5px;
-}
-
-.answer {
-  width:calc(100vw - 170px);
-  margin: 0 auto;
-  padding: 20px 0 30px 0;
-}
-
-.answer > p {
-  font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: bold;
-}
-
-
-.second-question > div:last-child,
-.third-question > div:last-child,
-.fourth-question > div:last-child,
-.fifth-question > div:last-child,
-.sixth-question > div:last-child,
-.seventh-question > div:last-child,
-.eighth-question > div:last-child,
-.nineth-question > div:last-child,
-.tenth-question > div:last-child,
-.eleventh-question > div:last-child,
-.twelfth-question > div:last-child,
-.thirteenth-question > div:last-child,
-.fourteenth-question > div:last-child,
-.fifteenth-question > div:last-child {
-  display: none;
-}
-
-.question-fifteenthAnswer {
-  padding-bottom: 50px;
-}
 
 /* footerクラス */
 
