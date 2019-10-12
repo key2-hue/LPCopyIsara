@@ -55,6 +55,14 @@ $(function(){
 
   });
 
+  if($('body')[0].scrollHeight < 100) {
+    $('.footer-four > p').css({'display': 'none'});
+  }
+
+  $('.footer-four > p').on('click', function(){
+    $("html,body").animate({scrollTop: 0 });
+  });
+
   // var x = $(window).width();
   // var y = 769;
   // if( x > y ){

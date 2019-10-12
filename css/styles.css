@@ -6957,9 +6957,9 @@
 /* footerクラス */
 
 @media (max-width:768px) {
-  footer {
+  /* footer {
     padding-bottom: 10px;
-  }
+  } */
 }
 
 @media(min-width: 769px) {
@@ -6972,6 +6972,7 @@ footer {
   background: #ececec;
   text-align: center;
   color: #333333;
+  /* position: relative; */
 }
 
 .footer-one > p,
@@ -7033,6 +7034,30 @@ footer {
 .maya:hover, 
 .koga:hover {
   text-decoration: underline;
+}
+
+.footer-four {
+  height: 0px;
+  padding-bottom: 10px;
+}
+
+.footer-four > p {
+  /* float: right; */
+  height: 0px;
+  /* position: absolute; */
+  top: 660px;
+  left: calc(100vw - 60px);
+  font-size: 27px;
+  background: #ececec;
+  width: 50px;
+  height: 50px;
+  line-height: 55px;
+  position: fixed;
+  animation-duration: 2s;
+}
+
+.footer-four > p:hover {
+  cursor: pointer;
 }
 
 
