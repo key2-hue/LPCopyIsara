@@ -3,6 +3,10 @@
   /* overflow: hidden; */
 }
 
+/* *:not(header) {
+  overflow-x: hidden;
+} */
+
 /* small max-width: 768px
   madium min-width: 769px
   large min-width: 1191px
@@ -4430,11 +4434,20 @@
     letter-spacing: 1px;
     user-select: none;
   }
-  
+
   .flow-js > p:hover {
-    border-bottom: 1px solid #000000;
     cursor: pointer;
+  }
+  
+  .flow-js > p:first-of-type:hover {
+    border-bottom: 1px solid #000000;
     height: 20px;
+  }
+
+  .flow-js > p:last-of-type {
+    margin-left: auto;
+    margin-right: 40px;
+    font-size: 18px;
   }
   
   
@@ -4563,6 +4576,14 @@
     /* margin-top: 20px; */
     margin-left: 60px;
     width: 120px;
+  }
+
+  .flow-js > p:first-of-type {
+    padding-bottom: 40px;
+  }
+
+  .flow-js > p:last-of-type {
+    display: none;
   }
 
   .first-flowSum,
@@ -4737,6 +4758,14 @@
     /* margin-top: 20px; */
     margin-left: 60px;
     width: 120px;
+  }
+
+  .flow-js > p:first-of-type {
+    padding-bottom: 40px;
+  }
+
+  .flow-js > p:last-of-type {
+    display: none;
   }
 
   .first-flowSum,
@@ -6625,6 +6654,16 @@
     margin: 0 auto;
     height: 35px;
     line-height: 35px;
+    position: relative;
+  }
+
+
+
+
+  .title > div {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100vw - 40px);
   }
   
   .title > i,
@@ -6637,6 +6676,23 @@
   .title > p:first-of-type {
     font-size: 15px;
   }
+
+  .after-first > p:last-of-type {
+    position: relative;
+    top: 5px;
+  }
+
+  .after-second > p:last-of-type {
+    position: relative;
+  }
+
+  .title > p:last-of-type {
+   margin-left: auto;
+   margin-right: 15px;
+   color: #ddd;
+   align-self: center;
+   font-size: 19px;
+  }
   
   .title > i {
     display: inline-block;
@@ -6647,6 +6703,16 @@
   
   .title > p:first-of-type {
     font-weight: bold;
+  }
+
+  .title > i:hover,
+  .title > p:hover {
+    cursor: pointer;
+  }
+
+  .title > p:first-of-type:hover {
+    height: 25px;
+    border-bottom: 1px solid #000;
   }
   
   .quest:not(:first-of-type) > div:first-child {
@@ -6724,6 +6790,24 @@
   .title > p:first-of-type {
     font-weight: bold;
   }
+
+  .title > i:hover,
+  .title > p:hover {
+    cursor: pointer;
+  }
+
+  .title > p:first-of-type:hover {
+    height: 38px;
+    border-bottom: 1px solid #000;
+  }
+
+  .title > p:last-of-type {
+    margin-left: auto;
+    margin-right: 25px;
+    color: #ddd;
+    align-self: center;
+    font-size: 26px;
+   }
   
   .quest:not(:first-of-type) > div:first-child {
     margin-top: 5px;
@@ -6800,12 +6884,30 @@
     color: #016ea9;
     font-size: 19px;
   }
+
+  .title > i:hover,
+  .title > p:hover {
+    cursor: pointer;
+  }
+
+  .title > p:first-of-type:hover {
+    height: 25px;
+    border-bottom: 1px solid #000;
+  }
   
   .title > p:first-of-type {
     font-weight: bold;
     font-size: 20px;
     letter-spacing: 1.5px;
   }
+
+  .title > p:last-of-type {
+    margin-left: auto;
+    margin-right: 35px;
+    color: #ddd;
+    align-self: center;
+    font-size: 19px;
+   }
   
   .quest:not(:first-of-type) > div:first-child {
     margin-top: 5px;
@@ -6837,10 +6939,21 @@
 
 /* footerクラス */
 
+@media (max-width:768px) {
+  footer {
+    padding-bottom: 10px;
+  }
+}
+
+@media(min-width: 769px) {
+  footer {
+    padding-bottom: 20px;
+  }
+}
+
 footer {
   background: #ececec;
   text-align: center;
-  padding-bottom: 10px;
   color: #333333;
 }
 
